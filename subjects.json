@@ -1,0 +1,3661 @@
+{
+  "meta": {
+    "university": "APJ Abdul Kalam Technological University (KTU)",
+    "program": "B.Tech Computer Science and Engineering",
+    "semesters": 8,
+    "last_updated": "2024",
+    "source": "Official KTU Syllabus"
+  },
+  "subjects": [
+    {
+      "code": "CST201",
+      "name": "Data Structures",
+      "semester": 3,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Basic Concepts of Data Structures",
+          "hours": 9,
+          "topics": [
+            "System Life Cycle",
+            "Algorithm Specification",
+            "Data Abstraction",
+            "Performance Analysis — Time and Space Complexity",
+            "Asymptotic Notation: Big-O, Omega, Theta",
+            "Stacks — Array Representation, Operations",
+            "Queues — Array Representation, Circular Queue",
+            "Priority Queues, Double Ended Queues"
+          ],
+          "notes": {
+            "detailed": "Data Structures are ways of organizing data so that it can be used efficiently. The System Life Cycle covers requirements, analysis, design, coding, verification, and maintenance. An algorithm must be finite, definite, input/output-driven, and effective. Time complexity measures the number of steps as a function of input size. Space complexity measures memory usage. Big-O notation gives the upper bound: if f(n)=O(g(n)), then f grows no faster than g. A Stack is a LIFO structure supporting push, pop, peek, and isEmpty in O(1). A Queue is FIFO; circular queues solve the false-overflow problem by wrapping the rear pointer. A Priority Queue dequeues the highest-priority element first, used in schedulers and Dijkstra's algorithm.",
+            "short_notes": [
+              "Algorithm properties: Finiteness, Definiteness, Input, Output, Effectiveness",
+              "Big-O (upper bound), Omega (lower bound), Theta (tight bound)",
+              "Stack: LIFO — push/pop O(1), used in function calls, expression evaluation",
+              "Queue: FIFO — enqueue/dequeue O(1), used in BFS, scheduling",
+              "Circular Queue: fixes false overflow — rear = (rear+1) % MAX",
+              "Priority Queue: elements dequeued by priority, not arrival order",
+              "Deque (Double Ended Queue): insert/delete at both ends"
+            ]
+          },
+          "important_topics": [
+            "Asymptotic notation comparison and examples",
+            "Stack operations and array implementation",
+            "Circular Queue logic and overflow conditions",
+            "Infix to Postfix conversion using stacks"
+          ],
+          "expected_questions": [
+            "Calculate the frequency count and time complexity of a given code segment.",
+            "Explain the differences between a circular queue and a normal queue.",
+            "Write an algorithm to convert an infix expression to postfix using a stack.",
+            "Compare Big-O, Omega, and Theta notations with examples.",
+            "Implement a priority queue using an array and explain its operations."
+          ],
+          "videos": [
+            {
+              "title": "Introduction to Data Structures",
+              "url": "https://www.youtube.com/watch?v=RBSGKlAvoiM",
+              "channel": "freeCodeCamp"
+            },
+            {
+              "title": "Big O Notation — Time and Space Complexity",
+              "url": "https://www.youtube.com/watch?v=v4cd1O4zkGw",
+              "channel": "HackerRank"
+            },
+            {
+              "title": "Stack Data Structure",
+              "url": "https://www.youtube.com/watch?v=wjI1WNcIntg",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Queue Data Structure",
+              "url": "https://www.youtube.com/watch?v=XuCbpw6Bj1U",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Circular Queue and Priority Queue",
+              "url": "https://www.youtube.com/watch?v=HqBBd9YWZPU",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Arrays and Searching",
+          "hours": 9,
+          "topics": [
+            "Polynomial Representation using Arrays",
+            "Sparse Matrix Representation",
+            "Linear Search",
+            "Binary Search",
+            "Multidimensional Arrays",
+            "String Representation and Operations"
+          ],
+          "notes": {
+            "detailed": "Arrays store elements of the same type in contiguous memory, enabling O(1) random access. Polynomials can be stored as coefficient-exponent pairs in an array. Sparse matrices (mostly zeros) are efficiently stored using a triplet format (row, col, value) or linked lists to save space. Linear Search scans each element sequentially — O(n) worst case, suitable for unsorted data. Binary Search requires a sorted array; it repeatedly halves the search space — O(log n) time. At each step, compare mid = (low+high)/2 with target; adjust low or high accordingly.",
+            "short_notes": [
+              "Array: O(1) access, O(n) insertion/deletion",
+              "Polynomial: stored as (coefficient, exponent) pairs",
+              "Sparse Matrix: use triplet (row, col, value) to save space",
+              "Linear Search: O(n) — works on unsorted data",
+              "Binary Search: O(log n) — requires sorted array",
+              "Binary Search: mid = (low + high) / 2"
+            ]
+          },
+          "important_topics": [
+            "Binary Search algorithm and complexity",
+            "Sparse Matrix representation and operations",
+            "Polynomial addition using arrays"
+          ],
+          "expected_questions": [
+            "Write algorithms for Linear Search and Binary Search and compare their time complexities.",
+            "Represent the given sparse matrix in triplet form and write addition algorithm.",
+            "Write an algorithm to add two polynomials stored as arrays."
+          ],
+          "videos": [
+            {
+              "title": "Arrays in Data Structures",
+              "url": "https://www.youtube.com/watch?v=55l-aZ7_F24",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Binary Search Algorithm",
+              "url": "https://www.youtube.com/watch?v=P3YID7liBug",
+              "channel": "CS Dojo"
+            },
+            {
+              "title": "Sparse Matrix Representation",
+              "url": "https://www.youtube.com/watch?v=d3h8PCuLMJ0",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Linear Search vs Binary Search",
+              "url": "https://www.youtube.com/watch?v=C46QfTjVCNU",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Polynomial Representation using Arrays",
+              "url": "https://www.youtube.com/watch?v=7DOQDy46SKA",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Linked List and Memory Management",
+          "hours": 9,
+          "topics": [
+            "Singly Linked List — Insertion, Deletion, Search",
+            "Doubly Linked List",
+            "Circular Linked List",
+            "Stacks using Linked List",
+            "Queues using Linked List",
+            "Polynomial Representation using Linked List",
+            "Dynamic Memory Allocation",
+            "Garbage Collection"
+          ],
+          "notes": {
+            "detailed": "A Linked List is a dynamic data structure where each node holds data and a pointer to the next node. Singly linked lists support insertion and deletion in O(1) at head, O(n) at arbitrary position. Doubly linked lists allow traversal in both directions with prev and next pointers. Circular linked lists connect the last node back to the first, useful for round-robin scheduling. Stacks and Queues implemented with linked lists have no overflow unless memory is exhausted. Polynomials linked list nodes store (coeff, exp, next). Memory management involves malloc/free; garbage collection reclaims unreachable nodes. Boundary tag method tracks allocated/free blocks.",
+            "short_notes": [
+              "Linked List: dynamic size, no contiguous memory needed",
+              "Singly LL: O(1) head insert, O(n) search/delete",
+              "Doubly LL: bidirectional traversal, prev + next pointers",
+              "Circular LL: last node points to head — used in round-robin",
+              "LL Stack: push/pop at head — O(1), no overflow",
+              "Garbage collection: reclaims memory of unreachable nodes"
+            ]
+          },
+          "important_topics": [
+            "Singly Linked List all operations with algorithms",
+            "Comparing array vs linked list for stack/queue",
+            "Polynomial addition using linked lists"
+          ],
+          "expected_questions": [
+            "Write algorithms for insertion and deletion in a singly linked list.",
+            "Compare arrays and linked lists for implementing stacks and queues.",
+            "Write an algorithm to add two polynomials represented as linked lists.",
+            "Explain doubly linked list with all operations.",
+            "What is garbage collection? Explain boundary tag method."
+          ],
+          "videos": [
+            {
+              "title": "Linked List — All Operations",
+              "url": "https://www.youtube.com/watch?v=njTh_OwMljA",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Doubly Linked List",
+              "url": "https://www.youtube.com/watch?v=VOQNf1VxU3Q",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Circular Linked List",
+              "url": "https://www.youtube.com/watch?v=9VL3_4a2LDPX",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Stack and Queue using Linked List",
+              "url": "https://www.youtube.com/watch?v=oomkwH4A4Tc",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Dynamic Memory Allocation in C",
+              "url": "https://www.youtube.com/watch?v=_8-ht2AKyH4",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Trees and Graphs",
+          "hours": 9,
+          "topics": [
+            "Trees and Binary Trees — Terminology",
+            "Binary Tree Representation (Array and Linked)",
+            "Tree Traversals — Inorder, Preorder, Postorder",
+            "Binary Search Tree — Insert, Delete, Search",
+            "Graphs — Terminology, Representation (Adjacency Matrix, List)",
+            "Depth First Search (DFS)",
+            "Breadth First Search (BFS)",
+            "Applications of Graphs"
+          ],
+          "notes": {
+            "detailed": "A tree is a connected acyclic graph. A binary tree has at most two children per node. Binary trees are represented as arrays (for complete trees: left child at 2i, right at 2i+1) or as linked nodes. Inorder (Left-Root-Right) gives sorted output for BST. Preorder (Root-Left-Right) is used for tree copying. Postorder (Left-Right-Root) is used for deletion. BST property: left subtree < root < right subtree; search and insert O(h) where h is height. Graphs are represented using adjacency matrix (O(V²) space) or adjacency list (O(V+E) space). DFS uses a stack and explores as far as possible before backtracking — O(V+E). BFS uses a queue and explores level by level — O(V+E). Applications include shortest paths, topological sort, spanning trees.",
+            "short_notes": [
+              "Binary Tree: at most 2 children; height = log2(n) for complete tree",
+              "Inorder = Left-Root-Right → sorted output for BST",
+              "Preorder = Root-Left-Right → tree copy/serialization",
+              "Postorder = Left-Right-Root → tree deletion",
+              "BST: Insert/Search O(log n) avg, O(n) worst",
+              "DFS: Stack-based, O(V+E)",
+              "BFS: Queue-based, O(V+E), finds shortest path (unweighted)"
+            ]
+          },
+          "important_topics": [
+            "All tree traversals with examples",
+            "BST insert, delete (all cases), and search",
+            "DFS and BFS with adjacency list/matrix",
+            "Applications of DFS and BFS"
+          ],
+          "expected_questions": [
+            "Find the Depth First Search and Breadth First Search of a given graph.",
+            "List the properties of Binary Search Tree. Write an algorithm to search an element from a BST.",
+            "Write an iterative algorithm for inorder traversal of a Binary Tree.",
+            "Construct a BST from the given list of elements and trace a deletion operation.",
+            "Compare adjacency matrix and adjacency list representations of graphs."
+          ],
+          "videos": [
+            {
+              "title": "Binary Trees — Introduction",
+              "url": "https://www.youtube.com/watch?v=H5JubkIy_p8",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Tree Traversals — Inorder Preorder Postorder",
+              "url": "https://www.youtube.com/watch?v=9RHO6jU--GU",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Binary Search Tree Operations",
+              "url": "https://www.youtube.com/watch?v=pYT9F8_LFTM",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Graph Representation — Adjacency Matrix and List",
+              "url": "https://www.youtube.com/watch?v=5hPfm_uqXmw",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "BFS and DFS — Graph Traversal",
+              "url": "https://www.youtube.com/watch?v=pcKY4hjDrxk",
+              "channel": "mycodeschool"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Sorting and Hashing",
+          "hours": 9,
+          "topics": [
+            "Selection Sort",
+            "Insertion Sort",
+            "Merge Sort",
+            "Quick Sort",
+            "Heap Sort",
+            "Hashing — Hashing Techniques and Functions",
+            "Mid-Square Method, Division Method",
+            "Collision Resolution — Chaining, Open Addressing"
+          ],
+          "notes": {
+            "detailed": "Sorting arranges elements in order. Selection Sort finds the minimum and places it at the start — O(n²) always. Insertion Sort builds a sorted array incrementally — O(n²) worst, O(n) best. Merge Sort divides, recursively sorts, then merges — O(n log n) always, O(n) space. Quick Sort partitions around a pivot — O(n log n) average, O(n²) worst; in-place. Heap Sort uses a max-heap; build heap O(n), sort O(n log n). Hashing maps keys to indices via a hash function for O(1) average lookup. Division method: h(k) = k mod m. Mid-square: square the key, extract middle digits. Collisions resolved by chaining (linked lists at buckets) or open addressing (linear probing, quadratic probing, double hashing).",
+            "short_notes": [
+              "Selection Sort: O(n²) — finds min each pass",
+              "Insertion Sort: O(n²) worst, O(n) best — good for nearly sorted",
+              "Merge Sort: O(n log n) all cases — stable, needs O(n) space",
+              "Quick Sort: O(n log n) avg, O(n²) worst — in-place",
+              "Heap Sort: O(n log n) — uses max-heap",
+              "Hash function: h(k) = k mod m (Division method)",
+              "Collision: Chaining (linked list) or Open Addressing (probing)"
+            ]
+          },
+          "important_topics": [
+            "Trace Merge Sort and Quick Sort on given arrays",
+            "Comparison of all sorting algorithms by complexity and stability",
+            "Hashing with collision resolution"
+          ],
+          "expected_questions": [
+            "Trace the execution of Quick Sort and Merge Sort on a given array.",
+            "Compare sorting algorithms with respect to time complexity, space complexity, and stability.",
+            "Explain hashing with the division method. How is collision handled using chaining?",
+            "Write the algorithm for Heap Sort and trace it on an example.",
+            "What is open addressing? Compare linear probing, quadratic probing, and double hashing."
+          ],
+          "videos": [
+            {
+              "title": "Merge Sort Algorithm",
+              "url": "https://www.youtube.com/watch?v=TzeBrDU-JaY",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Quick Sort Algorithm",
+              "url": "https://www.youtube.com/watch?v=COk73cpQbFQ",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Heap Sort Algorithm",
+              "url": "https://www.youtube.com/watch?v=MtQL_ll5KhQ",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Hashing — Hash Functions and Collision",
+              "url": "https://www.youtube.com/watch?v=mFY0J5W8Udk",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Sorting Algorithms Comparison",
+              "url": "https://www.youtube.com/watch?v=kPRA0W1kECg",
+              "channel": "freeCodeCamp"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "Binary Search Tree operations",
+            "frequency": 18,
+            "last_asked": 2023
+          },
+          {
+            "topic": "DFS and BFS on graphs",
+            "frequency": 16,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Sorting algorithm traces (Merge/Quick)",
+            "frequency": 15,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Linked List operations",
+            "frequency": 13,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Hashing and collision resolution",
+            "frequency": 11,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "AVL Trees",
+          "Heap Sort trace",
+          "Quick Sort worst case analysis"
+        ],
+        "exam_pattern": "Part A: 10 × 3 marks; Part B: 5 modules × 14 marks (choose 1 of 2)"
+      }
+    },
+    {
+      "code": "CST202",
+      "name": "Computer Organization and Architecture",
+      "semester": 3,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Basic Structure of Computers",
+          "hours": 9,
+          "topics": [
+            "Functional Units of a Computer",
+            "Basic Operational Concepts",
+            "Bus Structures",
+            "Memory Locations and Addresses",
+            "Memory Operations",
+            "Instructions and Instruction Sequencing",
+            "Addressing Modes",
+            "Assembly Language"
+          ],
+          "notes": {
+            "detailed": "A computer has five functional units: Input, Memory, ALU, Control Unit, and Output. The CPU fetches instructions from memory, decodes them, and executes them — the fetch-decode-execute cycle. Memory is byte-addressable; each location holds one byte. Big-endian stores MSB at the lowest address; little-endian stores LSB first. A bus is a shared communication path; the system bus has address, data, and control lines. Addressing modes include: immediate (operand in instruction), register (operand in register), direct (address in instruction), indirect (address points to address), indexed, and relative.",
+            "short_notes": [
+              "Five units: Input, Memory, ALU, CU, Output",
+              "Fetch-Decode-Execute: basic CPU instruction cycle",
+              "Big-endian: MSB first; Little-endian: LSB first",
+              "System bus: Address bus + Data bus + Control bus",
+              "Immediate mode: fastest, operand in instruction itself",
+              "Indirect mode: double memory access, most flexible"
+            ]
+          },
+          "important_topics": [
+            "Addressing modes with examples",
+            "Instruction formats",
+            "Bus structure"
+          ],
+          "expected_questions": [
+            "Explain all addressing modes with examples.",
+            "Give the significance of the instruction cycle.",
+            "Distinguish between big endian and little endian notations.",
+            "Explain the functional units of a computer with a block diagram."
+          ],
+          "videos": [
+            {
+              "title": "Computer Organization Overview",
+              "url": "https://www.youtube.com/watch?v=Ol8D69VKX2k",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Number Systems and Data Representation",
+              "url": "https://www.youtube.com/watch?v=1GSjbWt0c9M",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Fixed and Floating Point Representation",
+              "url": "https://www.youtube.com/watch?v=dQhj5RGtag0",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Boolean Algebra and Logic Gates",
+              "url": "https://www.youtube.com/watch?v=gI-qXk7XojA",
+              "channel": "The Organic Chemistry Tutor"
+            },
+            {
+              "title": "Karnaugh Maps Simplification",
+              "url": "https://www.youtube.com/watch?v=RO5alU6PpSU",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Register Transfer Logic and Processor Logic Design",
+          "hours": 10,
+          "topics": [
+            "Register Transfer Language",
+            "Register Transfer, Bus and Memory Transfers",
+            "Arithmetic, Logic and Shift Micro-operations",
+            "ALU Design",
+            "Instruction Codes",
+            "Computer Registers",
+            "Computer Instructions",
+            "Timing and Control"
+          ],
+          "notes": {
+            "detailed": "Register Transfer Language (RTL) describes micro-operations symbolically. A micro-operation is an elementary operation on data in registers. Types include: arithmetic (add, subtract, increment), logic (AND, OR, NOT, XOR), and shift (logical, arithmetic, circular). The ALU performs all arithmetic and logic operations. The accumulator is a register used to hold intermediate results. The instruction register (IR) holds the current instruction; the program counter (PC) holds the address of the next instruction.",
+            "short_notes": [
+              "RTL: symbolic notation for register transfers — e.g., R1 ← R2",
+              "Micro-operations: arithmetic, logic, shift",
+              "PC: holds next instruction address",
+              "IR: holds current instruction",
+              "MAR: Memory Address Register",
+              "MDR: Memory Data Register"
+            ]
+          },
+          "important_topics": [
+            "ALU design",
+            "Micro-operations",
+            "RTL notation"
+          ],
+          "expected_questions": [
+            "Design an ALU that performs arithmetic and logic operations.",
+            "Explain arithmetic and logic micro-operations with examples.",
+            "What is Register Transfer Language? Give examples."
+          ],
+          "videos": [
+            {
+              "title": "Adders — Half and Full Adder",
+              "url": "https://www.youtube.com/watch?v=1I5ZR6bkvZg",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Booth's Multiplication Algorithm",
+              "url": "https://www.youtube.com/watch?v=p3zD8FLqjPs",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Flip Flops — SR, JK, D, T",
+              "url": "https://www.youtube.com/watch?v=Syj0CrUpRkA",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Registers and Counters",
+              "url": "https://www.youtube.com/watch?v=L0Ef7HKRQRA",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "ALU Design",
+              "url": "https://www.youtube.com/watch?v=BP63NhEz7lI",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Arithmetic Algorithms and Pipelining",
+          "hours": 9,
+          "topics": [
+            "Addition and Subtraction — Signed Magnitude, 2's Complement",
+            "Hardware Implementation of Adder/Subtractor",
+            "Multiplication — Booth's Algorithm",
+            "Division Algorithm",
+            "Floating Point Arithmetic",
+            "Instruction Pipeline",
+            "Arithmetic Pipeline"
+          ],
+          "notes": {
+            "detailed": "2's complement is standard for signed integers. Addition is done directly; subtraction uses the 2's complement of the subtrahend. Booth's algorithm multiplies signed binary numbers efficiently by examining pairs of bits, replacing groups of 1s with +1 and −1 operations. Pipelining divides instruction execution into stages (IF, ID, EX, MEM, WB) so multiple instructions overlap. A k-stage pipeline can have k instructions in flight simultaneously, achieving throughput of 1 instruction/clock in steady state. Hazards: structural (resource conflict), data (RAW, WAR, WAW), and control (branches).",
+            "short_notes": [
+              "2's complement: invert all bits + 1",
+              "Booth's algorithm: handles signed multiplication efficiently",
+              "Pipeline stages: IF → ID → EX → MEM → WB",
+              "Pipeline speedup = n × k / (k + n - 1) ≈ k for large n",
+              "Hazards: Structural, Data (RAW/WAR/WAW), Control"
+            ]
+          },
+          "important_topics": [
+            "Booth's Algorithm trace",
+            "Pipeline hazards",
+            "Floating point representation"
+          ],
+          "expected_questions": [
+            "Trace Booth's Algorithm for given operands.",
+            "Explain the different types of pipeline hazards and their solutions.",
+            "What is an instruction pipeline? Explain the five-stage pipeline with a diagram."
+          ],
+          "videos": [
+            {
+              "title": "CPU Organisation and Instruction Cycle",
+              "url": "https://www.youtube.com/watch?v=jFDMZpkUWCw",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Addressing Modes in Computer Organisation",
+              "url": "https://www.youtube.com/watch?v=VRbkFaKS3AY",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Hardwired vs Microprogrammed Control Unit",
+              "url": "https://www.youtube.com/watch?v=YFkO4gQrxEg",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Pipelining in Computer Architecture",
+              "url": "https://www.youtube.com/watch?v=eVRdfl4zxfI",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Pipeline Hazards",
+              "url": "https://www.youtube.com/watch?v=mftJy3BmU3A",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Control Logic Design",
+          "hours": 9,
+          "topics": [
+            "Control Organization",
+            "Hardwired Control",
+            "Micro-programmed Control",
+            "Control Memory",
+            "Address Sequencing",
+            "Micro-instruction Formats",
+            "Nano-programming"
+          ],
+          "notes": {
+            "detailed": "The control unit generates signals to coordinate all CPU components. Hardwired control uses combinational logic for speed — fast but inflexible. Micro-programmed control stores control signals as microinstructions in a control memory (ROM) — flexible, easier to modify. A microprogram is a sequence of microinstructions. The micro-PC sequences through the control store. Horizontal micro-programming: one bit per control signal (fast, wide word). Vertical micro-programming: encoded signals (compact, needs decoder).",
+            "short_notes": [
+              "Hardwired: fast, inflexible, uses combinational logic",
+              "Microprogrammed: flexible, uses control ROM",
+              "Horizontal microcode: one bit per signal — fast but wide",
+              "Vertical microcode: encoded — compact but needs decoder",
+              "Control memory: ROM storing microinstructions"
+            ]
+          },
+          "important_topics": [
+            "Hardwired vs microprogrammed control",
+            "Microinstruction format"
+          ],
+          "expected_questions": [
+            "Compare hardwired and micro-programmed control units.",
+            "Explain horizontal and vertical micro-programming.",
+            "What is a micro-program? Describe address sequencing in micro-programmed control."
+          ],
+          "videos": [
+            {
+              "title": "Memory Hierarchy in Computer Architecture",
+              "url": "https://www.youtube.com/watch?v=cioEBNEMDic",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Cache Memory — Mapping Techniques",
+              "url": "https://www.youtube.com/watch?v=vt-bBjHADng",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Virtual Memory and Paging",
+              "url": "https://www.youtube.com/watch?v=qcBIvnQt0Bw",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "RAM and ROM Types",
+              "url": "https://www.youtube.com/watch?v=0WtJBIuSjjA",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "DRAM vs SRAM",
+              "url": "https://www.youtube.com/watch?v=JVbf6X3APac",
+              "channel": "CrashCourse"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Basic Processing Units, I/O and Memory",
+          "hours": 8,
+          "topics": [
+            "Execution of a Complete Instruction",
+            "Accessing I/O Devices",
+            "Interrupts — Enabling, Disabling, Handling",
+            "Direct Memory Access (DMA)",
+            "Buses — Arbitration, Synchronous, Asynchronous",
+            "Cache Memory — Mapping Functions (Direct, Associative, Set-Associative)",
+            "Cache Replacement Policies",
+            "Memory System: RAM, ROM, EPROM"
+          ],
+          "notes": {
+            "detailed": "I/O can be memory-mapped (I/O registers in memory address space, same instructions as memory) or I/O-mapped (separate address space, IN/OUT instructions). Interrupts allow devices to signal the CPU asynchronously. DMA transfers data directly between memory and I/O without CPU intervention, using a DMA controller that takes bus control. Cache memory sits between CPU and RAM; it exploits temporal and spatial locality. Direct mapping: block i maps to cache line i mod N. Fully associative: any block maps anywhere. Set-associative: compromise. Replacement policies: LRU, FIFO, Random.",
+            "short_notes": [
+              "Memory-mapped I/O: I/O uses memory addresses",
+              "Interrupt: asynchronous CPU notification from device",
+              "DMA: bulk data transfer without CPU, uses bus mastering",
+              "Cache: fast SRAM between CPU and RAM",
+              "Direct mapping: one possible cache line per block",
+              "Fully associative: any block → any line (most flexible)",
+              "LRU replacement: evict least recently used block"
+            ]
+          },
+          "important_topics": [
+            "Cache mapping functions with examples",
+            "DMA operation",
+            "Interrupt handling"
+          ],
+          "expected_questions": [
+            "Compare I/O mapped I/O and memory mapped I/O.",
+            "Explain the three cache mapping functions with examples.",
+            "What is DMA? Explain how DMA transfers data.",
+            "Explain the interrupt mechanism with an example.",
+            "Compare SRAM and DRAM memory technologies."
+          ],
+          "videos": [
+            {
+              "title": "I/O Organisation — Techniques",
+              "url": "https://www.youtube.com/watch?v=FGiEtMXxj8g",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Interrupt Handling Mechanism",
+              "url": "https://www.youtube.com/watch?v=54BrU82ANww",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "DMA — Direct Memory Access",
+              "url": "https://www.youtube.com/watch?v=gy3NjWExLGQ",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Cache Mapping — Direct, Associative, Set-Associative",
+              "url": "https://www.youtube.com/watch?v=vt-bBjHADng",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Memory Mapped I/O vs I/O Mapped I/O",
+              "url": "https://www.youtube.com/watch?v=jKirFb_DRnc",
+              "channel": "Neso Academy"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "Cache memory mapping functions",
+            "frequency": 17,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Booth's Algorithm",
+            "frequency": 15,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Pipeline and hazards",
+            "frequency": 14,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Addressing modes",
+            "frequency": 13,
+            "last_asked": 2022
+          },
+          {
+            "topic": "DMA and Interrupts",
+            "frequency": 11,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "Set-associative cache examples",
+          "Pipeline speedup calculation",
+          "Hardwired vs microprogrammed control"
+        ]
+      }
+    },
+    {
+      "code": "CST204",
+      "name": "Database Management Systems",
+      "semester": 4,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Introduction and Entity Relationship Model",
+          "hours": 9,
+          "topics": [
+            "Purpose of Database Systems",
+            "Database System Architecture — Levels of Abstraction",
+            "Database Users and Administrators",
+            "ER Model: Entities, Attributes, Keys",
+            "Relationships — Types and Cardinality",
+            "ER Diagram Notation and Construction",
+            "Weak Entities",
+            "Extended ER Features"
+          ],
+          "notes": {
+            "detailed": "A DBMS is software managing an organized collection of data providing efficient, reliable access. The three-schema architecture has External (user views), Conceptual (logical structure), and Internal (physical storage) levels. The ER model represents data as entities and relationships. An entity is a real-world object; attributes describe it. A key attribute uniquely identifies an entity. Relationships have cardinality: one-to-one, one-to-many, many-to-many. Weak entities lack a key attribute and depend on a strong entity (owner). Participation: total (double line) = every entity participates; partial (single line) = some participate.",
+            "short_notes": [
+              "Three-schema: External → Conceptual → Internal",
+              "Entity: real-world object; Attribute: property of entity",
+              "Primary key: uniquely identifies each entity instance",
+              "Cardinality: 1:1, 1:N, M:N",
+              "Weak entity: no key, depends on owner entity",
+              "Total participation: double line in ER diagram"
+            ]
+          },
+          "important_topics": [
+            "ER diagram construction for given scenarios",
+            "Cardinality and participation",
+            "Weak entities"
+          ],
+          "expected_questions": [
+            "Design an ER diagram for a given scenario (e.g., Hospital, Library, University).",
+            "Explain the different types of attributes in the ER model with examples.",
+            "What are weak entities? Give an example and show it in an ER diagram.",
+            "Compare total and partial participation with examples."
+          ],
+          "videos": [
+            {
+              "title": "Introduction to DBMS",
+              "url": "https://www.youtube.com/watch?v=FR4QIeZaPeM",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "ER Model — Entities, Attributes, Relationships",
+              "url": "https://www.youtube.com/watch?v=QpdhBUYk7Kk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "ER Diagram Design",
+              "url": "https://www.youtube.com/watch?v=cQ-pBNZCjWs",
+              "channel": "Lucidchart"
+            },
+            {
+              "title": "Weak Entities in ER Model",
+              "url": "https://www.youtube.com/watch?v=djJJTFbBMuA",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Three Schema Architecture of DBMS",
+              "url": "https://www.youtube.com/watch?v=YyBhGWtDpnc",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Relational Model and SQL DDL",
+          "hours": 9,
+          "topics": [
+            "Relational Model: Concepts — Relation, Tuple, Attribute, Domain",
+            "Relational Algebra: Select, Project, Cartesian Product",
+            "Relational Algebra: Join — Equi-join, Natural join, Outer join",
+            "Converting ER Diagram to Relational Schema",
+            "SQL Data Types",
+            "SQL DDL: CREATE, ALTER, DROP",
+            "INSERT, DELETE, UPDATE",
+            "Integrity Constraints: PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE"
+          ],
+          "notes": {
+            "detailed": "The relational model represents data as tables (relations). A tuple is a row; an attribute is a column; a domain is the set of permissible values. Relational algebra: SELECT (σ) filters rows by condition; PROJECT (π) selects columns; CARTESIAN PRODUCT (×) combines all tuple pairs. JOIN combines tables on a condition: equi-join uses = operator; natural join eliminates duplicate columns; outer joins (left, right, full) preserve non-matching tuples. SQL DDL creates schema: CREATE TABLE with constraints. Integrity constraints enforce correctness: PRIMARY KEY uniquely identifies rows, FOREIGN KEY enforces referential integrity.",
+            "short_notes": [
+              "Relation = Table; Tuple = Row; Attribute = Column",
+              "σ (Select): filter rows — σ condition (R)",
+              "π (Project): select columns — π attrs (R)",
+              "Natural Join: joins on common attributes, removes duplicates",
+              "Left Outer Join: keeps all left tuples, nulls for unmatched right",
+              "CREATE TABLE defines schema + constraints",
+              "FOREIGN KEY: references primary key of another table"
+            ]
+          },
+          "important_topics": [
+            "Relational algebra expressions for queries",
+            "ER to relational schema conversion",
+            "SQL DDL with constraints"
+          ],
+          "expected_questions": [
+            "Synthesize the given ER diagram into a relational schema.",
+            "Write relational algebra expressions for given queries.",
+            "Write SQL DDL statements to create tables with appropriate constraints.",
+            "Differentiate equi-join, natural join, and outer join with examples."
+          ],
+          "videos": [
+            {
+              "title": "Relational Model and Relational Algebra",
+              "url": "https://www.youtube.com/watch?v=t0_a-KHIHW0",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Relational Algebra Operations",
+              "url": "https://www.youtube.com/watch?v=bPuI7Px3DLQ",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "SQL DDL — CREATE, ALTER, DROP",
+              "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+              "channel": "freeCodeCamp"
+            },
+            {
+              "title": "SQL Joins — Equi, Natural, Outer",
+              "url": "https://www.youtube.com/watch?v=9yeOJ0ZMUYw",
+              "channel": "Programming with Mosh"
+            },
+            {
+              "title": "Converting ER Diagram to Relational Schema",
+              "url": "https://www.youtube.com/watch?v=a6MqsECkquE",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "SQL DML and Physical Data Organization",
+          "hours": 9,
+          "topics": [
+            "SQL DML: SELECT — Single and Multi-table Queries",
+            "Aggregate Functions: COUNT, SUM, AVG, MIN, MAX",
+            "GROUP BY, HAVING, ORDER BY",
+            "Nested Queries (Subqueries)",
+            "Views and Triggers",
+            "Physical Data Organization: Files, Records, Blocking Factor",
+            "Heap Files",
+            "Indexing: Single-level, Multi-level (B+ Tree)",
+            "Grid Files"
+          ],
+          "notes": {
+            "detailed": "SQL SELECT syntax: SELECT columns FROM tables WHERE condition GROUP BY col HAVING condition ORDER BY col. Aggregate functions operate on groups: COUNT(*), SUM(col), AVG(col). Subqueries embed one SELECT inside another; correlated subqueries reference the outer query. Views are virtual tables defined by queries; they simplify complex queries and provide security. Triggers are procedural code that execute on INSERT/UPDATE/DELETE events. Physical organization affects I/O performance. Blocking factor = block size / record size. A B+ tree index stores data only in leaves; internal nodes are used for navigation. All leaves linked for range queries.",
+            "short_notes": [
+              "SELECT-FROM-WHERE-GROUP BY-HAVING-ORDER BY",
+              "HAVING filters groups; WHERE filters rows",
+              "Correlated subquery: references outer query column",
+              "View: virtual table, no physical storage",
+              "Trigger: fires on INSERT/UPDATE/DELETE",
+              "B+ Tree: data in leaves, internal nodes for routing",
+              "Blocking factor = floor(block_size / record_size)"
+            ]
+          },
+          "important_topics": [
+            "Complex SQL queries with joins and aggregates",
+            "B+ tree index structure",
+            "Subqueries and views"
+          ],
+          "expected_questions": [
+            "Write SQL queries for given problem statements involving joins, aggregates, and subqueries.",
+            "Explain B+ tree indexing with an example.",
+            "What are views? How are they created and what are their advantages?",
+            "What are triggers? Write a trigger for a given scenario.",
+            "Explain the different types of file organization for physical data storage."
+          ],
+          "videos": [
+            {
+              "title": "SQL SELECT Queries — Complete Tutorial",
+              "url": "https://www.youtube.com/watch?v=27axs9dO7AE",
+              "channel": "Programming with Mosh"
+            },
+            {
+              "title": "SQL Aggregate Functions and GROUP BY",
+              "url": "https://www.youtube.com/watch?v=HGXHGhkM2OM",
+              "channel": "kudvenkat"
+            },
+            {
+              "title": "SQL Subqueries",
+              "url": "https://www.youtube.com/watch?v=2qMFPdInj_k",
+              "channel": "kudvenkat"
+            },
+            {
+              "title": "Views and Triggers in SQL",
+              "url": "https://www.youtube.com/watch?v=wciubfRhvtM",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "B+ Tree Indexing",
+              "url": "https://www.youtube.com/watch?v=NI9wYuVIYcA",
+              "channel": "Abdul Bari"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Normalization",
+          "hours": 9,
+          "topics": [
+            "Functional Dependencies",
+            "Armstrong's Axioms",
+            "Closure of Attribute Sets",
+            "First Normal Form (1NF)",
+            "Second Normal Form (2NF)",
+            "Third Normal Form (3NF)",
+            "Boyce-Codd Normal Form (BCNF)",
+            "Lossless Decomposition",
+            "Dependency Preservation"
+          ],
+          "notes": {
+            "detailed": "Normalization eliminates redundancy and anomalies (insertion, deletion, update). A functional dependency X → Y means X determines Y. Armstrong's Axioms: Reflexivity, Augmentation, Transitivity. 1NF: all attributes atomic (no repeating groups). 2NF: 1NF + no partial dependency (non-key attribute depends on entire primary key). 3NF: 2NF + no transitive dependency (non-key attribute depends on another non-key attribute). BCNF: every determinant is a candidate key — stronger than 3NF. A decomposition is lossless if the original relation can be reconstructed. It is dependency-preserving if all FDs are preserved.",
+            "short_notes": [
+              "FD: X → Y means X determines Y uniquely",
+              "Armstrong's Axioms: Reflexivity, Augmentation, Transitivity",
+              "1NF: atomic values only",
+              "2NF: 1NF + no partial dependency on primary key",
+              "3NF: 2NF + no transitive dependency",
+              "BCNF: every determinant is a candidate key",
+              "Lossless decomposition: R1 ∩ R2 → R1 or R1 ∩ R2 → R2"
+            ]
+          },
+          "important_topics": [
+            "Normalizing a given relation to 3NF/BCNF",
+            "Finding candidate keys",
+            "Identifying FD violations"
+          ],
+          "expected_questions": [
+            "Normalize a given relation to 3NF and BCNF showing each step.",
+            "Find all candidate keys for a given relation with functional dependencies.",
+            "Explain the three types of anomalies that normalization addresses.",
+            "Distinguish between 3NF and BCNF with examples.",
+            "What is lossless decomposition? How do you test for it?"
+          ],
+          "videos": [
+            {
+              "title": "Functional Dependencies and Normalization",
+              "url": "https://www.youtube.com/watch?v=xoTyrdT9SZI",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "1NF, 2NF, 3NF — Step by Step",
+              "url": "https://www.youtube.com/watch?v=GFQaEYEc8_8",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "BCNF — Boyce-Codd Normal Form",
+              "url": "https://www.youtube.com/watch?v=NNjUhvvwOrk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Armstrong's Axioms",
+              "url": "https://www.youtube.com/watch?v=OVR5IxKiCPU",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Lossless Decomposition and Dependency Preservation",
+              "url": "https://www.youtube.com/watch?v=P10AACB0oMk",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Transactions, Concurrency and Recovery",
+          "hours": 9,
+          "topics": [
+            "Transaction Model — ACID Properties",
+            "Transaction States",
+            "System Log",
+            "Concurrency Control: Lost Update, Dirty Read",
+            "Lock-based Protocols: Shared and Exclusive Locks",
+            "Two-Phase Locking Protocol",
+            "Timestamp-based Protocols",
+            "Recovery: Undo, Redo, Checkpointing",
+            "Introduction to NoSQL Databases"
+          ],
+          "notes": {
+            "detailed": "A transaction is a logical unit of work. ACID properties: Atomicity (all or nothing), Consistency (DB constraints maintained), Isolation (concurrent transactions appear serial), Durability (committed changes survive failure). States: Active → Partially Committed → Committed / Failed → Aborted. The system log records all changes for recovery. Concurrency problems: lost update (two transactions overwrite each other), dirty read (reading uncommitted data). Two-Phase Locking (2PL): growing phase (acquire locks), shrinking phase (release locks) — ensures serializability. Recovery uses UNDO (uncommitted transactions) and REDO (committed but not yet written to disk).",
+            "short_notes": [
+              "ACID: Atomicity, Consistency, Isolation, Durability",
+              "Dirty Read: reading uncommitted data from another transaction",
+              "Lost Update: two transactions overwrite each other's changes",
+              "2PL: growing phase (acquire) then shrinking phase (release)",
+              "UNDO: rollback uncommitted changes on failure",
+              "REDO: reapply committed changes not yet written to disk",
+              "Checkpoint: periodic disk flush to limit redo scope"
+            ]
+          },
+          "important_topics": [
+            "ACID properties",
+            "2PL protocol",
+            "Transaction states diagram",
+            "Recovery techniques"
+          ],
+          "expected_questions": [
+            "Explain ACID properties of transactions with examples.",
+            "What is the Two-Phase Locking protocol? How does it ensure serializability?",
+            "Describe the transaction state diagram.",
+            "Explain the UNDO/REDO recovery technique.",
+            "What are the concurrency problems in DBMS? How are they solved?"
+          ],
+          "videos": [
+            {
+              "title": "ACID Properties of Transactions",
+              "url": "https://www.youtube.com/watch?v=pomxJOFVcQs",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Transaction States and System Log",
+              "url": "https://www.youtube.com/watch?v=HGQHkce6D10",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Two-Phase Locking Protocol",
+              "url": "https://www.youtube.com/watch?v=6QFWZ8j_XAE",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Concurrency Control Problems",
+              "url": "https://www.youtube.com/watch?v=Jn0mIDoQDIM",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Database Recovery Techniques — UNDO and REDO",
+              "url": "https://www.youtube.com/watch?v=cpRFpRBj5lM",
+              "channel": "Neso Academy"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "Normalization (2NF/3NF/BCNF)",
+            "frequency": 19,
+            "last_asked": 2023
+          },
+          {
+            "topic": "SQL queries (complex joins + aggregates)",
+            "frequency": 18,
+            "last_asked": 2023
+          },
+          {
+            "topic": "ER diagram design",
+            "frequency": 16,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Transaction ACID + 2PL",
+            "frequency": 14,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Relational Algebra",
+            "frequency": 12,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "NoSQL vs RDBMS",
+          "B+ tree indexing",
+          "BCNF decomposition"
+        ]
+      }
+    },
+    {
+      "code": "CST206",
+      "name": "Operating Systems",
+      "semester": 4,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Introduction to Operating Systems",
+          "hours": 9,
+          "topics": [
+            "OS Functions and Goals",
+            "Types of OS: Batch, Time-sharing, Real-time, Distributed",
+            "System Calls",
+            "OS Structure: Monolithic, Layered, Microkernel",
+            "Process Concept — PCB",
+            "Process States and Transitions",
+            "Process Creation and Termination",
+            "Context Switching"
+          ],
+          "notes": {
+            "detailed": "An OS is system software managing hardware resources and providing services to programs. Goals: convenience and efficiency. System calls are the programming interface to OS services (e.g., fork, exec, read, write). OS structures: Monolithic (Linux) — all kernel code in one layer, fast but fragile; Layered — each layer uses only lower layers; Microkernel (Mach) — minimal kernel, services in user space, more stable. A process is a program in execution with its own PCB storing: PID, state, program counter, registers, memory info, I/O info. States: New → Ready → Running → Waiting → Terminated. Context switch saves the running process's state and loads another's.",
+            "short_notes": [
+              "OS: manages CPU, memory, I/O, files",
+              "System call: interface between user programs and kernel",
+              "Monolithic: fast, all in kernel space (Linux)",
+              "Microkernel: minimal kernel, services in user space (Mach)",
+              "PCB: PID, state, PC, registers, memory maps",
+              "Context switch: save old process state, load new — overhead"
+            ]
+          },
+          "important_topics": [
+            "Process state diagram",
+            "System call types",
+            "OS structures comparison"
+          ],
+          "expected_questions": [
+            "Explain the process state transition diagram.",
+            "What is a system call? How does hardware find the OS kernel after system switch-on?",
+            "Why is context switching considered an overhead?",
+            "Compare monolithic and microkernel OS architectures."
+          ],
+          "videos": [
+            {
+              "title": "Introduction to Operating Systems",
+              "url": "https://www.youtube.com/watch?v=9GDX-IyZ_C8",
+              "channel": "freeCodeCamp"
+            },
+            {
+              "title": "Process Concept and PCB",
+              "url": "https://www.youtube.com/watch?v=OrM7nZcxXZU",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Process State Transition Diagram",
+              "url": "https://www.youtube.com/watch?v=v7qxjWjGgX4",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "System Calls in OS",
+              "url": "https://www.youtube.com/watch?v=lhToWeuWWfw",
+              "channel": "Jacob Sorber"
+            },
+            {
+              "title": "OS Structures — Monolithic, Layered, Microkernel",
+              "url": "https://www.youtube.com/watch?v=YQx9SOQWEFQ",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Process Scheduling",
+          "hours": 9,
+          "topics": [
+            "CPU Scheduling Criteria",
+            "FCFS Scheduling",
+            "Shortest Job First (SJF)",
+            "Priority Scheduling",
+            "Round Robin (RR) Scheduling",
+            "Multilevel Queue Scheduling",
+            "Multilevel Feedback Queue",
+            "Thread Concepts and Multithreading"
+          ],
+          "notes": {
+            "detailed": "CPU scheduling determines which process runs next. Criteria: CPU utilization (maximize), throughput (maximize), turnaround time (minimize), waiting time (minimize), response time (minimize). FCFS: non-preemptive, simple, suffers convoy effect. SJF: optimal avg waiting time, may cause starvation; preemptive version = SRTF. Priority: starvation solved by aging. Round Robin: preemptive with time quantum q; good response time; if q too large = FCFS, too small = too many context switches. Multilevel feedback queue is the most general algorithm.",
+            "short_notes": [
+              "FCFS: simple, non-preemptive, convoy effect",
+              "SJF: optimal waiting time, starvation of long jobs",
+              "SRTF: preemptive SJF",
+              "Priority: aging prevents starvation",
+              "Round Robin: preemptive, time quantum q, best response time",
+              "Turnaround time = completion - arrival time",
+              "Waiting time = turnaround - burst time"
+            ]
+          },
+          "important_topics": [
+            "Gantt chart and calculation for all scheduling algorithms",
+            "Round Robin time quantum effect",
+            "Comparison of algorithms"
+          ],
+          "expected_questions": [
+            "Given processes with arrival and burst times, compute Gantt charts and average waiting time for FCFS, SJF, and Round Robin.",
+            "Explain the convoy effect in FCFS scheduling.",
+            "Compare preemptive and non-preemptive scheduling with examples.",
+            "What are the criteria for comparing CPU scheduling algorithms?"
+          ],
+          "videos": [
+            {
+              "title": "CPU Scheduling Algorithms",
+              "url": "https://www.youtube.com/watch?v=EWkQl0n0w5M",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "FCFS, SJF, Round Robin Scheduling",
+              "url": "https://www.youtube.com/watch?v=Ns5KMKzxvic",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Priority Scheduling and Starvation",
+              "url": "https://www.youtube.com/watch?v=1FRsLiMlUs0",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Threads vs Processes",
+              "url": "https://www.youtube.com/watch?v=Dhf-DYO1K78",
+              "channel": "Jacob Sorber"
+            },
+            {
+              "title": "Multilevel Queue and Feedback Scheduling",
+              "url": "https://www.youtube.com/watch?v=ykRe7oc-1CE",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Process Synchronization",
+          "hours": 9,
+          "topics": [
+            "Critical Section Problem",
+            "Requirements: Mutual Exclusion, Progress, Bounded Waiting",
+            "Peterson's Solution",
+            "Hardware Synchronization",
+            "Mutex Locks",
+            "Semaphores — Binary and Counting",
+            "Classic Problems: Dining Philosophers, Readers-Writers, Bounded Buffer",
+            "Monitors"
+          ],
+          "notes": {
+            "detailed": "The critical section is code that accesses shared resources. Requirements for a correct solution: Mutual Exclusion (only one process at a time), Progress (if no process is in CS, a waiting process must eventually enter), Bounded Waiting (limit on how many times others can enter before a waiting process). Peterson's solution uses two variables (flag[], turn) for two processes. A semaphore is an integer variable with atomic wait() (P) and signal() (V) operations. Binary semaphore = mutex. Counting semaphore manages N resources. Dining Philosophers: 5 philosophers, 5 forks — risk of deadlock; solution: one philosopher picks right fork first.",
+            "short_notes": [
+              "Critical section: code accessing shared resource",
+              "Mutual exclusion: only one process in CS at a time",
+              "Semaphore: wait() = P (decrement), signal() = V (increment)",
+              "Binary semaphore = mutex lock",
+              "Counting semaphore: tracks N available resources",
+              "Dining Philosophers: deadlock risk, solved by asymmetric solution",
+              "Monitor: high-level sync construct with condition variables"
+            ]
+          },
+          "important_topics": [
+            "Semaphore solutions to classic problems",
+            "Peterson's solution proof",
+            "Monitors vs semaphores"
+          ],
+          "expected_questions": [
+            "What is the critical section problem? State its requirements.",
+            "Explain Peterson's solution for the critical section problem.",
+            "Solve the Bounded Buffer problem using semaphores.",
+            "What is a monitor? How does it differ from a semaphore?",
+            "Explain the Readers-Writers problem and its solution."
+          ],
+          "videos": [
+            {
+              "title": "Process Synchronization — Race Condition",
+              "url": "https://www.youtube.com/watch?v=ph2awKa8r5Y",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Semaphores in OS",
+              "url": "https://www.youtube.com/watch?v=ukM_zzrIeXs",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Dining Philosophers Problem",
+              "url": "https://www.youtube.com/watch?v=NbwbQQB7xNQ",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Deadlock — Conditions and Prevention",
+              "url": "https://www.youtube.com/watch?v=Jkmy2YLUbUY",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Banker's Algorithm for Deadlock Avoidance",
+              "url": "https://www.youtube.com/watch?v=7gMLNiEz3nw",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Deadlocks",
+          "hours": 9,
+          "topics": [
+            "Deadlock Conditions: Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait",
+            "Resource Allocation Graph",
+            "Deadlock Prevention",
+            "Deadlock Avoidance — Banker's Algorithm",
+            "Deadlock Detection",
+            "Recovery from Deadlock"
+          ],
+          "notes": {
+            "detailed": "Deadlock occurs when processes wait for each other in a circular chain. Four necessary conditions (Coffman): Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait. Resource Allocation Graph: circles = processes, rectangles = resources; cycle = possible deadlock (definite if one instance per resource). Prevention: eliminate one condition. Avoidance: Banker's Algorithm maintains a safe state. Safety algorithm: find a process whose need ≤ available resources, run it, release resources, repeat. Detection: run detection algorithm periodically. Recovery: kill processes or preempt resources.",
+            "short_notes": [
+              "Deadlock: 4 conditions must ALL hold simultaneously",
+              "RAG cycle with single instances = definite deadlock",
+              "Prevention: deny one of the 4 conditions",
+              "Banker's: ensures system stays in safe state",
+              "Safe state: sequence exists where all processes can complete",
+              "Recovery: process termination or resource preemption"
+            ]
+          },
+          "important_topics": [
+            "Banker's Algorithm trace",
+            "Resource Allocation Graph analysis",
+            "Deadlock conditions"
+          ],
+          "expected_questions": [
+            "Trace Banker's Algorithm for a given state to determine if it is safe.",
+            "Draw and interpret a Resource Allocation Graph with a cycle.",
+            "What are the four necessary conditions for deadlock? How can each be prevented?",
+            "Explain deadlock detection and recovery strategies."
+          ],
+          "videos": [
+            {
+              "title": "Memory Management — Paging and Segmentation",
+              "url": "https://www.youtube.com/watch?v=qlH4-oHnBb8",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Virtual Memory and Demand Paging",
+              "url": "https://www.youtube.com/watch?v=2quKyPnUShQ",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Page Replacement Algorithms — FCFS, LRU, Optimal",
+              "url": "https://www.youtube.com/watch?v=pMF6Tlmm-0I",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Thrashing in OS",
+              "url": "https://www.youtube.com/watch?v=0EoheWFzRbs",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Segmentation vs Paging",
+              "url": "https://www.youtube.com/watch?v=r5-ylB7_pnc",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Memory Management and File Systems",
+          "hours": 9,
+          "topics": [
+            "Memory Management: Contiguous Allocation, Fragmentation",
+            "Paging: Page Table, Address Translation",
+            "Segmentation",
+            "Virtual Memory: Demand Paging",
+            "Page Replacement Algorithms: FIFO, Optimal, LRU",
+            "Thrashing",
+            "File Concepts, Access Methods",
+            "Directory Structure",
+            "File System Implementation"
+          ],
+          "notes": {
+            "detailed": "Paging divides physical memory into frames and logical memory into pages of equal size. The page table maps page numbers to frame numbers; logical address = (page no., offset). Address translation: physical address = frame_no × page_size + offset. Virtual memory allows processes to exceed physical memory size using disk as an extension. Demand paging loads pages only when needed; page fault triggers disk read. Page replacement algorithms: FIFO (evict oldest — simple, Belady's anomaly), Optimal (evict page used farthest in future — theoretical), LRU (evict least recently used — best practical, no Belady's anomaly). Thrashing: CPU spends more time paging than executing.",
+            "short_notes": [
+              "Paging: eliminates external fragmentation",
+              "Page table: maps page → frame; stored in memory",
+              "TLB: cache for page table entries, reduces access time",
+              "Demand paging: load page only on page fault",
+              "FIFO: oldest page evicted, Belady's anomaly possible",
+              "Optimal: best performance, not implementable in practice",
+              "LRU: best practical, no Belady's anomaly",
+              "Thrashing: too many page faults, CPU utilization drops"
+            ]
+          },
+          "important_topics": [
+            "Page replacement algorithms trace and comparison",
+            "Paging address translation",
+            "Thrashing explanation"
+          ],
+          "expected_questions": [
+            "For the given reference string, calculate page faults using FCFS, Optimal, and LRU.",
+            "Explain logical to physical address translation in paging with an example.",
+            "What is thrashing? How can it be prevented?",
+            "Compare internal and external fragmentation. Which does paging eliminate?",
+            "Explain the different file allocation methods on disk."
+          ],
+          "videos": [
+            {
+              "title": "File System in OS",
+              "url": "https://www.youtube.com/watch?v=KN8YgJnShPM",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Disk Scheduling Algorithms",
+              "url": "https://www.youtube.com/watch?v=cBNaY8qMBXY",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "File Allocation Methods",
+              "url": "https://www.youtube.com/watch?v=p_lHoJ4VIqk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Directory Structure in OS",
+              "url": "https://www.youtube.com/watch?v=jBjBuDFpSBs",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "RAID Levels Explained",
+              "url": "https://www.youtube.com/watch?v=U-OCdTeZLac",
+              "channel": "PowerCert Animated Videos"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "CPU Scheduling (Gantt chart + avg waiting time)",
+            "frequency": 20,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Deadlock and Banker's Algorithm",
+            "frequency": 18,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Page replacement algorithms",
+            "frequency": 17,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Semaphores and classic problems",
+            "frequency": 15,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Process state diagram and PCB",
+            "frequency": 10,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "Virtual memory and demand paging",
+          "Monitors",
+          "Multilevel feedback queue"
+        ]
+      }
+    },
+    {
+      "code": "CST301",
+      "name": "Formal Languages and Automata Theory",
+      "semester": 5,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Introduction and Regular Languages",
+          "hours": 9,
+          "topics": [
+            "Alphabets, Strings, Languages",
+            "Deterministic Finite Automata (DFA) — Formal Definition",
+            "Language Accepted by DFA",
+            "Nondeterministic Finite Automata (NFA)",
+            "NFA with ε-transitions",
+            "Equivalence of DFA and NFA — Subset Construction",
+            "Regular Grammar (RG)",
+            "Equivalence of RG and DFA"
+          ],
+          "notes": {
+            "detailed": "An alphabet Σ is a finite set of symbols. A string is a finite sequence over Σ. A language is any set of strings over Σ. A DFA M = (Q, Σ, δ, q0, F) where Q = states, δ = transition function, q0 = initial state, F = final states. DFA accepts a string w if processing it leads to a final state. An NFA differs in that δ: Q × Σ → 2^Q (can go to multiple states). NFA with ε-transitions can change state without reading input. Subset construction converts NFA to DFA by tracking sets of possible NFA states. A Regular Grammar has productions A → aB or A → a; it generates regular languages.",
+            "short_notes": [
+              "DFA: exactly one transition per symbol per state",
+              "NFA: zero or more transitions per symbol per state",
+              "ε-NFA: can transition without reading input",
+              "Subset construction: states of DFA = subsets of NFA states",
+              "Regular Grammar: A → aB (right-linear) or A → Ba (left-linear)",
+              "DFA ≡ NFA ≡ ε-NFA ≡ Regular Grammar (all accept regular languages)"
+            ]
+          },
+          "important_topics": [
+            "DFA construction for given languages",
+            "Subset construction NFA to DFA",
+            "Regular grammar design"
+          ],
+          "expected_questions": [
+            "Design a DFA for a given language (e.g., strings ending in 'b', binary multiples of 5).",
+            "Convert a given NFA to an equivalent DFA using subset construction.",
+            "Write a Regular Grammar for a given language.",
+            "Draw an NFA for a given language and obtain the equivalent DFA."
+          ],
+          "videos": [
+            {
+              "title": "DFA — Deterministic Finite Automata",
+              "url": "https://www.youtube.com/watch?v=40i4PKpM0cI",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "NFA — Nondeterministic Finite Automata",
+              "url": "https://www.youtube.com/watch?v=ehy0jNwPyUo",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Subset Construction — NFA to DFA",
+              "url": "https://www.youtube.com/watch?v=--CSVsFIDng",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Epsilon NFA and Epsilon Closure",
+              "url": "https://www.youtube.com/watch?v=lMHqFXaQCms",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Regular Grammar",
+              "url": "https://www.youtube.com/watch?v=hBpPXk4LGEA",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "More on Regular Languages",
+          "hours": 9,
+          "topics": [
+            "Regular Expressions — Formal Definition",
+            "Conversion of RE to NFA (Thompson's Construction)",
+            "Kleene's Construction — NFA to RE",
+            "Homomorphisms",
+            "Pumping Lemma for Regular Languages",
+            "Ultimate Periodicity",
+            "Closure Properties of Regular Languages",
+            "DFA State Minimization — Quotient Construction"
+          ],
+          "notes": {
+            "detailed": "A Regular Expression is defined recursively: ∅, ε, a (for a∈Σ) are RE; if r, s are RE then (r+s), (r·s), r* are RE. RE denotes the same class as DFA/NFA. Pumping Lemma: for every regular language L, ∃ n such that every string w∈L with |w|≥n can be written as xyz where |xy|≤n, |y|≥1, and xy^iz∈L for all i≥0. Used to prove languages are NOT regular (by contradiction). DFA minimization: merge equivalent states (indistinguishable states). Table-filling algorithm marks pairs of states as distinguishable starting from (final, non-final) pairs.",
+            "short_notes": [
+              "RE operators: union (+), concatenation (·), Kleene star (*)",
+              "Thompson's construction: RE → NFA with ε-transitions",
+              "Kleene's construction: NFA → RE by state elimination",
+              "Pumping Lemma: use to DISPROVE a language is regular",
+              "Closure: regular languages closed under ∪, ∩, complement, concatenation, *",
+              "DFA minimization: merge indistinguishable states"
+            ]
+          },
+          "important_topics": [
+            "Pumping Lemma proofs",
+            "RE to NFA conversion",
+            "DFA minimization"
+          ],
+          "expected_questions": [
+            "Using the Pumping Lemma, prove that L = {aⁿbⁿ | n≥0} is not regular.",
+            "Write a Regular Expression for a given language and convert it to an NFA.",
+            "Using Kleene's construction, obtain the RE for a given NFA.",
+            "Obtain the minimum-state DFA for a given DFA."
+          ],
+          "videos": [
+            {
+              "title": "Regular Expressions — Introduction",
+              "url": "https://www.youtube.com/watch?v=528Jc3q86F8",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Thompson's Construction — RE to NFA",
+              "url": "https://www.youtube.com/watch?v=RYNN-tb9WxI",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Pumping Lemma for Regular Languages",
+              "url": "https://www.youtube.com/watch?v=dicZcG5-mqU",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "DFA Minimization — Table Filling",
+              "url": "https://www.youtube.com/watch?v=ex9sPLq5CRg",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Closure Properties of Regular Languages",
+              "url": "https://www.youtube.com/watch?v=A7A3IbPMbGM",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Myhill-Nerode Relations and Context-Free Grammars",
+          "hours": 10,
+          "topics": [
+            "Myhill-Nerode Relation — Definition and Properties",
+            "Conversion: DFA ↔ Myhill-Nerode Relation",
+            "Myhill-Nerode Theorem",
+            "Applications of MNT",
+            "Context-Free Grammar (CFG) — Formal Definition",
+            "Derivation Trees and Ambiguity",
+            "Chomsky Normal Form (CNF)",
+            "Greibach Normal Form (GNF)"
+          ],
+          "notes": {
+            "detailed": "The Myhill-Nerode relation: x ≡_L y if for every z, xz∈L iff yz∈L. MNT states: L is regular iff ≡_L has finite index (finite number of equivalence classes). The number of classes equals the number of states in the minimum DFA. A CFG G = (V, Σ, R, S) generates strings via derivations. Ambiguity: a grammar is ambiguous if some string has two distinct parse trees (leftmost derivations). CNF: all productions A→BC or A→a — useful for CYK parsing. GNF: all productions A→aα where a∈Σ — useful for PDA construction.",
+            "short_notes": [
+              "MNR: x≡y if they're indistinguishable by future strings",
+              "MNT: L regular ⟺ ≡_L has finite index",
+              "CFG: generates context-free languages (more powerful than regular)",
+              "Ambiguity: string has 2+ distinct leftmost derivations",
+              "CNF: A→BC or A→a (no ε except S→ε if ε∈L)",
+              "GNF: A→aα — terminal always first on RHS"
+            ]
+          },
+          "important_topics": [
+            "Converting CFG to CNF and GNF",
+            "Proving ambiguity",
+            "Myhill-Nerode theorem application"
+          ],
+          "expected_questions": [
+            "Convert a given CFG to Chomsky Normal Form.",
+            "Convert a given CFG to Greibach Normal Form.",
+            "Show the equivalence classes of the Myhill-Nerode relation for a given language.",
+            "Explain ambiguity in CFG with an example. Is every ambiguous grammar's language inherently ambiguous?"
+          ],
+          "videos": [
+            {
+              "title": "Context-Free Grammar Introduction",
+              "url": "https://www.youtube.com/watch?v=5_tfVe7ED3g",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Parse Trees and Ambiguity in CFG",
+              "url": "https://www.youtube.com/watch?v=u4-rpIlV9NI",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Chomsky Normal Form (CNF)",
+              "url": "https://www.youtube.com/watch?v=uECiKqgDTqo",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Greibach Normal Form (GNF)",
+              "url": "https://www.youtube.com/watch?v=ZNSzBcPATRA",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Myhill-Nerode Theorem",
+              "url": "https://www.youtube.com/watch?v=5ynl2DfNlSo",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "More on Context-Free Languages",
+          "hours": 8,
+          "topics": [
+            "Pushdown Automata (PDA) — Formal Definition",
+            "Acceptance by Final State and Empty Stack",
+            "Equivalence of Acceptance Criteria",
+            "Deterministic PDA (DPDA)",
+            "Conversion: CFG → PDA",
+            "Conversion: PDA → CFG",
+            "Pumping Lemma for Context-Free Languages",
+            "Closure Properties of CFLs"
+          ],
+          "notes": {
+            "detailed": "A PDA is an NFA augmented with a stack. Formally: M = (Q, Σ, Γ, δ, q0, Z0, F) where Γ = stack alphabet, Z0 = initial stack symbol. Transitions: (q, a, A) → (p, γ) means in state q, reading a, with A on top of stack, go to state p and push γ. A PDA accepts by final state OR by empty stack — both models are equivalent. Every CFG has an equivalent PDA: in state q, push the entire RHS of a production. Pumping Lemma for CFL: every long string in a CFL can be pumped in two places simultaneously (uvxyz decomposition).",
+            "short_notes": [
+              "PDA = NFA + stack (LIFO)",
+              "Acceptance: by final state OR empty stack (equivalent)",
+              "DPDA: deterministic PDA — accepts all DCFLs (e.g., palindromes with center marker)",
+              "CFG → PDA: push RHS, match terminals on stack",
+              "CFL Pumping Lemma: w = uvxyz, |vxy|≤n, |vy|≥1, uv^ix y^iz∈L"
+            ]
+          },
+          "important_topics": [
+            "PDA design for given languages",
+            "CFG to PDA conversion",
+            "Pumping Lemma for CFL proofs"
+          ],
+          "expected_questions": [
+            "Design a PDA for L = {aⁿbⁿ | n≥0} and trace it on a sample string.",
+            "Using CFL Pumping Lemma, prove that L = {ww | w∈{a,b}*} is not context-free.",
+            "Convert a given CFG to an equivalent PDA.",
+            "What are the closure properties of CFLs? Which operations is CFL NOT closed under?"
+          ],
+          "videos": [
+            {
+              "title": "Pushdown Automata (PDA)",
+              "url": "https://www.youtube.com/watch?v=4ejIAmp_Atw",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "PDA — Acceptance by Final State and Empty Stack",
+              "url": "https://www.youtube.com/watch?v=KYZzKMXR3z4",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "CFG to PDA Conversion",
+              "url": "https://www.youtube.com/watch?v=0kS8gHMtnTU",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Pumping Lemma for Context-Free Languages",
+              "url": "https://www.youtube.com/watch?v=jRhqx1_KcCk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Closure Properties of CFLs",
+              "url": "https://www.youtube.com/watch?v=S2kMCBMjt1s",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Context-Sensitive Languages and Turing Machines",
+          "hours": 9,
+          "topics": [
+            "Context-Sensitive Grammar (CSG)",
+            "Linear Bounded Automata (LBA)",
+            "Turing Machine — As Language Acceptor",
+            "TM as Transducer",
+            "Multi-tape and Non-deterministic TM",
+            "Universal Turing Machine",
+            "Halting Problem — Undecidability",
+            "Recursive and Recursively Enumerable Languages",
+            "Chomsky Hierarchy"
+          ],
+          "notes": {
+            "detailed": "A CSG has productions αAβ → αγβ where |γ|≥1 (no string shrinks). LBA is a TM restricted to the input tape length. A Turing Machine M = (Q, Σ, Γ, δ, q0, B, F) reads/writes on an infinite tape and moves left/right. TMs can compute any computable function (Church-Turing Thesis). The Halting Problem asks if a TM halts on a given input — proven undecidable by diagonalization. Chomsky Hierarchy: Type 3 (Regular, DFA) ⊂ Type 2 (CFL, PDA) ⊂ Type 1 (CSL, LBA) ⊂ Type 0 (RE, TM).",
+            "short_notes": [
+              "CSG: productions never reduce string length",
+              "LBA: TM bounded to input length",
+              "TM: tape + read-write head, most powerful model",
+              "Church-Turing Thesis: TM = intuitive notion of algorithm",
+              "Halting Problem: undecidable (proven by diagonalization/contradiction)",
+              "Chomsky: Type 3 ⊂ Type 2 ⊂ Type 1 ⊂ Type 0",
+              "Recursive: decidable (TM always halts); RE: semi-decidable"
+            ]
+          },
+          "important_topics": [
+            "Turing Machine design",
+            "Chomsky hierarchy table",
+            "Halting problem proof concept",
+            "Recursive vs RE languages"
+          ],
+          "expected_questions": [
+            "Design a Turing Machine to compute the sum of two unary numbers.",
+            "Write a Context-Sensitive Grammar for L = {aⁿbⁿcⁿ | n≥0}.",
+            "Explain the Chomsky classification of formal languages.",
+            "Prove that the Halting Problem is undecidable.",
+            "Differentiate between Recursive and Recursively Enumerable Languages."
+          ],
+          "videos": [
+            {
+              "title": "Turing Machine — Introduction",
+              "url": "https://www.youtube.com/watch?v=dNRDvLACg5Q",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Turing Machine Design Examples",
+              "url": "https://www.youtube.com/watch?v=FTSAiF9AHN4",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Halting Problem — Undecidability",
+              "url": "https://www.youtube.com/watch?v=t37GQgUPa6k",
+              "channel": "Computerphile"
+            },
+            {
+              "title": "Chomsky Hierarchy of Languages",
+              "url": "https://www.youtube.com/watch?v=224plb3bCog",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Recursive and Recursively Enumerable Languages",
+              "url": "https://www.youtube.com/watch?v=UnINbMwzGG4",
+              "channel": "Neso Academy"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "DFA/NFA design and subset construction",
+            "frequency": 19,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Pumping Lemma (regular and CFL)",
+            "frequency": 17,
+            "last_asked": 2023
+          },
+          {
+            "topic": "CFG normalization (CNF/GNF)",
+            "frequency": 15,
+            "last_asked": 2023
+          },
+          {
+            "topic": "PDA design",
+            "frequency": 14,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Turing Machine design",
+            "frequency": 12,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "Myhill-Nerode theorem applications",
+          "Undecidability proofs",
+          "CFL closure properties"
+        ]
+      }
+    },
+    {
+      "code": "CST303",
+      "name": "Computer Networks",
+      "semester": 5,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Introduction and Physical Layer",
+          "hours": 10,
+          "topics": [
+            "Uses of Computer Networks",
+            "Network Hardware: LAN, MAN, WAN",
+            "Network Software: Protocols, Layers",
+            "OSI Reference Model — 7 Layers",
+            "TCP/IP Reference Model",
+            "Comparison of OSI and TCP/IP",
+            "Physical Layer: Transmission Media",
+            "Signal Encoding, Bandwidth, Throughput, Latency"
+          ],
+          "notes": {
+            "detailed": "A computer network is an interconnected collection of autonomous computers. OSI model has 7 layers: Physical (bits), Data Link (frames), Network (packets), Transport (segments), Session, Presentation, Application. Each layer communicates with the layer above and below using well-defined interfaces. TCP/IP has 4 layers: Network Access, Internet, Transport, Application. Key differences: OSI is a reference model; TCP/IP is a practical implementation. Physical layer concerns: bandwidth (Hz, theoretical max), throughput (actual data rate), latency (propagation + transmission + queuing delay). Transmission media: guided (twisted pair, coaxial, fiber) and unguided (radio, microwave, infrared).",
+            "short_notes": [
+              "OSI 7 layers: Please Do Not Throw Sausage Pizza Away (Physical-Data-Network-Transport-Session-Presentation-Application)",
+              "TCP/IP: 4 layers — Network Access, Internet, Transport, Application",
+              "Bandwidth: max frequency range (Hz)",
+              "Throughput: actual data rate (bps)",
+              "Latency = propagation + transmission + queuing delay",
+              "Fiber optic: highest bandwidth, immune to EMI, most expensive"
+            ]
+          },
+          "important_topics": [
+            "OSI vs TCP/IP comparison",
+            "Physical layer performance metrics",
+            "Transmission media comparison"
+          ],
+          "expected_questions": [
+            "Compare the OSI and TCP/IP reference models.",
+            "Explain the functions of each layer of the OSI model.",
+            "Calculate propagation time given distance and speed.",
+            "What are the characteristics of optical fiber as a transmission medium?"
+          ],
+          "videos": [
+            {
+              "title": "Computer Networks — Introduction",
+              "url": "https://www.youtube.com/watch?v=3QhU9jd03a0",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "OSI Model — 7 Layers Explained",
+              "url": "https://www.youtube.com/watch?v=vv4y_uOneC0",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "TCP/IP Model vs OSI Model",
+              "url": "https://www.youtube.com/watch?v=CRdL1PcherM",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "Transmission Media in Networks",
+              "url": "https://www.youtube.com/watch?v=mR6MdGCLrgk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Bandwidth, Throughput, and Latency",
+              "url": "https://www.youtube.com/watch?v=UEn5FJFt0So",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Data Link Layer",
+          "hours": 10,
+          "topics": [
+            "Data Link Layer Design Issues",
+            "Error Detection: CRC, Hamming Code",
+            "Error Correction",
+            "Sliding Window Protocols: Stop-and-Wait, Go-Back-N, Selective Repeat",
+            "HDLC Protocol",
+            "MAC Sublayer: Channel Allocation",
+            "Multiple Access Protocols: ALOHA, CSMA, CSMA/CD, CSMA/CA",
+            "Ethernet (IEEE 802.3)",
+            "Wireless LAN (IEEE 802.11)",
+            "Bridges and Switches"
+          ],
+          "notes": {
+            "detailed": "The data link layer provides reliable node-to-node transfer. Framing delimits frames; error detection uses CRC (polynomial division — detect burst errors) and Hamming codes (detect and correct single-bit errors). Sliding window: Stop-and-Wait — send one frame, wait for ACK (inefficient). Go-Back-N — send up to W frames; on error, retransmit from error frame (window size ≤ 2^n-1). Selective Repeat — retransmit only erroneous frame (window size ≤ 2^(n-1)). Ethernet uses CSMA/CD: sense channel, transmit if idle, detect collision, jam and back-off (binary exponential backoff). 802.11 uses CSMA/CA: cannot detect collision over wireless, so avoids it.",
+            "short_notes": [
+              "CRC: polynomial division, detects burst errors ≤ r bits",
+              "Hamming code: detect and correct single-bit errors",
+              "Stop-and-Wait: efficiency = 1/(1+2a) where a = propagation/transmission time",
+              "Go-Back-N: window ≤ 2ⁿ⁻¹, retransmit from error",
+              "Selective Repeat: window ≤ 2ⁿ⁻¹, retransmit only error frame",
+              "CSMA/CD: used in Ethernet (wired)",
+              "CSMA/CA: used in 802.11 (wireless), uses RTS/CTS"
+            ]
+          },
+          "important_topics": [
+            "CRC computation",
+            "Sliding window protocols comparison",
+            "CSMA/CD vs CSMA/CA",
+            "Ethernet frame format"
+          ],
+          "expected_questions": [
+            "Compute the CRC for a given message using a given generator polynomial.",
+            "Compare Go-Back-N and Selective Repeat sliding window protocols.",
+            "Give the differences between CSMA/CD and CSMA/CA protocols.",
+            "Draw and explain the Ethernet frame format.",
+            "Why must Ethernet frames be at least 64 bytes? Justify."
+          ],
+          "videos": [
+            {
+              "title": "CRC — Cyclic Redundancy Check",
+              "url": "https://www.youtube.com/watch?v=A9g6rTMblz4",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Hamming Code Error Correction",
+              "url": "https://www.youtube.com/watch?v=373FUw-2U2k",
+              "channel": "3Blue1Brown"
+            },
+            {
+              "title": "Stop and Wait, Go-Back-N, Selective Repeat",
+              "url": "https://www.youtube.com/watch?v=QD3oCelHJ20",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "CSMA/CD and CSMA/CA",
+              "url": "https://www.youtube.com/watch?v=iKn0GzF5-IU",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Ethernet and MAC Address",
+              "url": "https://www.youtube.com/watch?v=UrG7RTWIJak",
+              "channel": "PowerCert Animated Videos"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Network Layer",
+          "hours": 8,
+          "topics": [
+            "Network Layer Design Issues",
+            "Routing Algorithms: Optimality Principle",
+            "Shortest Path Routing (Dijkstra's)",
+            "Flooding",
+            "Distance Vector Routing",
+            "Link State Routing",
+            "Multicast Routing",
+            "Congestion Control Algorithms",
+            "Quality of Service (QoS)"
+          ],
+          "notes": {
+            "detailed": "The network layer routes packets from source to destination across multiple networks. Routing algorithms can be static or dynamic. Dijkstra's shortest path: iteratively selects the nearest unvisited node. Distance Vector Routing (Bellman-Ford): each router knows cost to neighbors and shares its vector; vulnerable to count-to-infinity problem. Link State Routing: each router floods the entire network with its link states, then all routers compute shortest paths independently (used in OSPF). Congestion control prevents network overload: traffic shaping (token bucket, leaky bucket), admission control, traffic policing.",
+            "short_notes": [
+              "Routing: static (fixed) or dynamic (adapts to network changes)",
+              "Dijkstra: greedy, finds shortest path, O(V²)",
+              "Distance Vector: Bellman-Ford, count-to-infinity problem",
+              "Link State: flood LSAs, build complete topology, run Dijkstra",
+              "Flooding: every packet to every neighbor — reliable but wasteful",
+              "Leaky bucket: smooth bursty traffic to constant rate",
+              "Token bucket: allows bursts up to bucket size"
+            ]
+          },
+          "important_topics": [
+            "Distance vector routing computation",
+            "Link state vs distance vector comparison",
+            "Leaky bucket and token bucket"
+          ],
+          "expected_questions": [
+            "Given routing vectors from neighboring routers, compute the new routing table using distance vector routing.",
+            "Compare Distance Vector and Link State routing algorithms.",
+            "Explain the leaky bucket and token bucket congestion control techniques.",
+            "Apply Dijkstra's algorithm to find shortest paths in a given network."
+          ],
+          "videos": [
+            {
+              "title": "Network Layer — Routing Basics",
+              "url": "https://www.youtube.com/watch?v=dkdlGQzh3Fw",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Distance Vector Routing",
+              "url": "https://www.youtube.com/watch?v=x4jO7MoFMWA",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Link State Routing — Dijkstra",
+              "url": "https://www.youtube.com/watch?v=_lHSawdgXpI",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Congestion Control — Leaky Bucket and Token Bucket",
+              "url": "https://www.youtube.com/watch?v=4LfKFqGQlRw",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Dijkstra's Shortest Path Algorithm",
+              "url": "https://www.youtube.com/watch?v=GazC3A4OQTE",
+              "channel": "Computerphile"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Network Layer in the Internet",
+          "hours": 9,
+          "topics": [
+            "IP Protocol and IP Datagram Format",
+            "IP Addressing: Classes, Subnetting, CIDR",
+            "ICMP — Error Reporting and Query",
+            "ARP and RARP",
+            "DHCP and BOOTP",
+            "OSPF Protocol",
+            "BGP Protocol",
+            "IPv6 — Header Format, Advantages",
+            "ICMPv6"
+          ],
+          "notes": {
+            "detailed": "IPv4 addresses are 32-bit, written in dotted decimal. Classes: A (0.0.0.0-127.255.255.255), B (128-191), C (192-223), D (multicast), E (research). Subnetting divides a network into subnets using a subnet mask. CIDR (Classless Inter-Domain Routing) uses prefix length notation (/24). ARP resolves IP to MAC address (broadcast). RARP: MAC to IP (legacy). DHCP dynamically assigns IP addresses. OSPF is a link-state intra-domain routing protocol. BGP is the inter-domain (internet backbone) routing protocol using path vectors. IPv6 has 128-bit addresses, simplified header, no fragmentation by routers.",
+            "short_notes": [
+              "IPv4: 32 bits, 4 billion addresses (exhausted)",
+              "Subnetting: borrow host bits for network, use subnet mask",
+              "CIDR: /n notation, classless, aggregates routes",
+              "ARP: IP → MAC (broadcast query)",
+              "DHCP: dynamic IP assignment (DORA: Discover-Offer-Request-Ack)",
+              "OSPF: link-state, intra-domain, uses Dijkstra",
+              "BGP: path-vector, inter-domain, policy-based",
+              "IPv6: 128-bit, no fragmentation, built-in IPSec"
+            ]
+          },
+          "important_topics": [
+            "Subnetting calculations",
+            "IPv4 vs IPv6 comparison",
+            "ARP operation",
+            "DHCP process"
+          ],
+          "expected_questions": [
+            "Subnet a given Class C IP address into a given number of subnets. Find subnet mask and host range.",
+            "Compare IPv4 and IPv6.",
+            "Explain the DHCP address assignment process (DORA).",
+            "Compare OSPF and BGP routing protocols.",
+            "Explain the ARP process with a diagram."
+          ],
+          "videos": [
+            {
+              "title": "IPv4 Addressing and Subnetting",
+              "url": "https://www.youtube.com/watch?v=s_gy9VL3D_g",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "CIDR — Classless Inter-Domain Routing",
+              "url": "https://www.youtube.com/watch?v=Q1U9wVXRuHA",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "ARP and RARP Explained",
+              "url": "https://www.youtube.com/watch?v=EC1slXCT3bg",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "DHCP Process — DORA",
+              "url": "https://www.youtube.com/watch?v=e6-TaH5bkjo",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "IPv6 — Features and Header Format",
+              "url": "https://www.youtube.com/watch?v=irhS0ASkvy8",
+              "channel": "PowerCert Animated Videos"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Transport Layer and Application Layer",
+          "hours": 8,
+          "topics": [
+            "Transport Service: Connection-Oriented vs Connectionless",
+            "UDP — Header Format, Uses",
+            "TCP — Overview, Segment Header",
+            "TCP Connection Establishment (3-way Handshake)",
+            "TCP Connection Release",
+            "TCP Flow Control: Sliding Window",
+            "TCP Congestion Control: Slow Start, Congestion Avoidance",
+            "DNS",
+            "FTP",
+            "HTTP and WWW Architecture",
+            "SMTP and MIME",
+            "SNMP"
+          ],
+          "notes": {
+            "detailed": "UDP is connectionless, no reliability guarantee — used for DNS, streaming, VoIP (low overhead). TCP is connection-oriented, reliable, ordered, flow-controlled. TCP connection: SYN → SYN-ACK → ACK (3-way handshake). Connection termination: FIN → FIN-ACK → FIN → ACK (4-way). TCP flow control: receiver advertises window size; sender cannot exceed it. TCP congestion control: slow start (doubles cwnd each RTT until ssthresh), congestion avoidance (linear increase), fast retransmit/recovery. DNS resolves domain names to IPs using a hierarchy of name servers. HTTP is stateless; HTTPS adds TLS.",
+            "short_notes": [
+              "UDP: connectionless, no reliability, low overhead, fast",
+              "TCP: connection-oriented, reliable, ordered, flow+congestion controlled",
+              "3-way handshake: SYN → SYN-ACK → ACK",
+              "TCP slow start: cwnd doubles each RTT until ssthresh",
+              "DNS hierarchy: Root → TLD → Authoritative",
+              "FTP: uses two connections (control:21, data:20)",
+              "SMTP: push protocol for email; POP3/IMAP: pull protocols"
+            ]
+          },
+          "important_topics": [
+            "TCP 3-way handshake",
+            "TCP congestion control phases",
+            "DNS resolution process",
+            "UDP vs TCP comparison"
+          ],
+          "expected_questions": [
+            "Explain the TCP three-way handshake for connection establishment.",
+            "Describe TCP congestion control with slow start and congestion avoidance.",
+            "Compare TCP and UDP with respect to reliability, overhead, and use cases.",
+            "Explain the DNS name resolution process.",
+            "Give the architecture of the World Wide Web."
+          ],
+          "videos": [
+            {
+              "title": "TCP vs UDP — Comparison",
+              "url": "https://www.youtube.com/watch?v=uwoD5YsGACg",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "TCP 3-Way Handshake",
+              "url": "https://www.youtube.com/watch?v=xMtP5ZB3wSU",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "TCP Congestion Control — Slow Start",
+              "url": "https://www.youtube.com/watch?v=cPLDaypKQkU",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "DNS — How Domain Name System Works",
+              "url": "https://www.youtube.com/watch?v=mpQZVYPuDGU",
+              "channel": "PowerCert Animated Videos"
+            },
+            {
+              "title": "HTTP vs HTTPS and WWW Architecture",
+              "url": "https://www.youtube.com/watch?v=hExRDVZHhig",
+              "channel": "PowerCert Animated Videos"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "Subnetting calculations",
+            "frequency": 18,
+            "last_asked": 2023
+          },
+          {
+            "topic": "TCP vs UDP and 3-way handshake",
+            "frequency": 17,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Sliding window protocols",
+            "frequency": 15,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Distance vector routing computation",
+            "frequency": 14,
+            "last_asked": 2023
+          },
+          {
+            "topic": "OSI vs TCP/IP",
+            "frequency": 12,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "IPv6 features",
+          "TCP congestion control graphs",
+          "CSMA/CD vs CSMA/CA"
+        ]
+      }
+    },
+    {
+      "code": "CST305",
+      "name": "System Software",
+      "semester": 5,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Introduction to System Software",
+          "hours": 9,
+          "topics": [
+            "System Software vs Application Software",
+            "Assemblers, Linkers, Loaders, Macro Processors",
+            "SIC Architecture",
+            "SIC Instruction Set and Assembler Directives",
+            "SICXE Architecture"
+          ],
+          "notes": {
+            "detailed": "System software manages hardware and supports application software. Examples: OS, assemblers, compilers, linkers, loaders. SIC (Simplified Instructional Computer) is a hypothetical machine used for teaching. SIC has memory (32K bytes), registers (A, X, L, PC, SW), 24-bit instructions. SICXE adds index/base/PC-relative addressing, floating point registers, and larger memory.",
+            "short_notes": [
+              "SIC: simplified architecture for teaching assembler concepts",
+              "SIC registers: A (accumulator), X (index), L (linkage), PC, SW",
+              "SICXE: extended SIC with more addressing modes and larger memory",
+              "Assembler directive: instructions to assembler, not machine code"
+            ]
+          },
+          "important_topics": [
+            "SIC vs SICXE features",
+            "Assembler directives",
+            "SIC instruction formats"
+          ],
+          "expected_questions": [
+            "Explain the architecture of SIC and SICXE.",
+            "What are assembler directives? Give examples.",
+            "Compare SIC and SICXE architectures."
+          ],
+          "videos": [
+            {
+              "title": "System Software — Introduction",
+              "url": "https://www.youtube.com/watch?v=_d5b9HLVlgY",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "SIC Architecture Explained",
+              "url": "https://www.youtube.com/watch?v=oy2TKNJzBik",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "SIC vs SICXE — Differences",
+              "url": "https://www.youtube.com/watch?v=H7d2Xhj-Jt4",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Assembler, Linker, Loader Basics",
+              "url": "https://www.youtube.com/watch?v=N2y6csonII4",
+              "channel": "Jacob Sorber"
+            },
+            {
+              "title": "Assembler Directives in SIC",
+              "url": "https://www.youtube.com/watch?v=4UrjSBz-t2M",
+              "channel": "Education 4u"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Assembly Language Programming and Assemblers",
+          "hours": 8,
+          "topics": [
+            "Basic Functions of an Assembler",
+            "Two-Pass Assembler",
+            "Assembler Data Structures: SYMTAB, OPTAB, LOCCTR",
+            "Assembler Output: Header, Text, End Records",
+            "Forward References"
+          ],
+          "notes": {
+            "detailed": "An assembler converts assembly language to object code. A two-pass assembler: Pass 1 — assign addresses to all statements, build Symbol Table (SYMTAB). Pass 2 — generate object code using SYMTAB and Operation Table (OPTAB). LOCCTR tracks current address. Forward references (symbols used before definition) are resolved in pass 2. Object program format: Header (name, start, length), Text (code), End (first executable address) records.",
+            "short_notes": [
+              "Pass 1: build SYMTAB, assign addresses",
+              "Pass 2: generate object code using SYMTAB and OPTAB",
+              "SYMTAB: symbol → address mapping",
+              "OPTAB: mnemonic → opcode mapping",
+              "LOCCTR: tracks current assembly address",
+              "Forward reference: symbol used before its definition"
+            ]
+          },
+          "important_topics": [
+            "Two-pass assembler algorithm",
+            "SYMTAB and OPTAB structure",
+            "Object program format"
+          ],
+          "expected_questions": [
+            "Explain the two-pass assembler with its data structures.",
+            "What is a forward reference? How is it handled?",
+            "Describe the format of an object program generated by an assembler."
+          ],
+          "videos": [
+            {
+              "title": "Two-Pass Assembler Design",
+              "url": "https://www.youtube.com/watch?v=iKfP9xMiOm4",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "SYMTAB and OPTAB in Assembler",
+              "url": "https://www.youtube.com/watch?v=Zk5AZDZs9gU",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Forward References in Assembler",
+              "url": "https://www.youtube.com/watch?v=KCyP9nReDLY",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Object Program Format — Header, Text, End Records",
+              "url": "https://www.youtube.com/watch?v=FfQDz3pBiCE",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Assembler Pass 1 Algorithm",
+              "url": "https://www.youtube.com/watch?v=oK0vSRBpbq8",
+              "channel": "Education 4u"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Assembler Design Options",
+          "hours": 11,
+          "topics": [
+            "One-Pass Assembler",
+            "Multi-Pass Assembler",
+            "Load-and-Go Assembler",
+            "Implementation Example: MASM Assembler"
+          ],
+          "notes": {
+            "detailed": "A one-pass assembler generates object code in a single scan. It handles forward references by backpatching — storing the symbol's use and filling the address when the definition is found. Load-and-go assembler loads object code directly into memory without storing it as a file — used for immediate execution. MASM (Microsoft Macro Assembler) is a real-world x86 assembler supporting complex macro facilities.",
+            "short_notes": [
+              "One-pass assembler: handles forward refs by backpatching",
+              "Two-pass: most common, cleaner handling of forward refs",
+              "Load-and-go: no object file, directly loads into memory",
+              "Backpatching: fix-up addresses after symbol definition is found"
+            ]
+          },
+          "important_topics": [
+            "One-pass vs two-pass assembler trade-offs",
+            "Backpatching mechanism"
+          ],
+          "expected_questions": [
+            "Compare one-pass and two-pass assemblers.",
+            "Explain the backpatching technique used in one-pass assemblers.",
+            "What is a load-and-go assembler? Where is it used?"
+          ],
+          "videos": [
+            {
+              "title": "One-Pass Assembler and Backpatching",
+              "url": "https://www.youtube.com/watch?v=MZhkSAoVnLY",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Load-and-Go Assembler",
+              "url": "https://www.youtube.com/watch?v=5MZMedPtH9Q",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "One-Pass vs Two-Pass Assembler Comparison",
+              "url": "https://www.youtube.com/watch?v=dLWqAzeSJbk",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "MASM Assembler Overview",
+              "url": "https://www.youtube.com/watch?v=HgJBLTxeVbA",
+              "channel": "OliveStem"
+            },
+            {
+              "title": "Assembler Design Options",
+              "url": "https://www.youtube.com/watch?v=UVZ6t9gLXeY",
+              "channel": "Education 4u"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Loaders and Linkers",
+          "hours": 8,
+          "topics": [
+            "Loader Functions: Allocation, Linking, Relocation, Loading",
+            "Absolute Loader",
+            "Relocating Loader",
+            "Linking Loader — Two-Pass",
+            "Linkage Editor",
+            "Dynamic Linking",
+            "Bootstrap Loader"
+          ],
+          "notes": {
+            "detailed": "A loader loads object programs into memory for execution. Functions: allocation (assign memory), linking (combine modules), relocation (adjust addresses), loading (copy code). Absolute loader: no relocation needed; all addresses fixed. Relocating loader adjusts addresses at load time using modification records. Linking loader combines multiple object modules and performs relocation in a single pass. Dynamic linking (DLLs/shared libraries): library code linked at runtime, saves memory. Bootstrap loader is the first program run on power-on, loading the OS.",
+            "short_notes": [
+              "Loader: allocation + linking + relocation + loading",
+              "Absolute loader: simplest, fixed addresses",
+              "Relocating loader: adjusts addresses using modification records",
+              "Dynamic linking: library loaded at runtime (DLL)",
+              "Bootstrap loader: first code run, loads the OS"
+            ]
+          },
+          "important_topics": [
+            "Linking loader two-pass algorithm",
+            "Dynamic vs static linking",
+            "Absolute vs relocating loader"
+          ],
+          "expected_questions": [
+            "Explain the functions of a loader.",
+            "Compare static and dynamic linking.",
+            "Describe the two-pass linking loader with data structures.",
+            "What is a bootstrap loader?"
+          ],
+          "videos": [
+            {
+              "title": "Loader Functions — Allocation and Linking",
+              "url": "https://www.youtube.com/watch?v=7BKPF0m8kqk",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Absolute vs Relocating Loader",
+              "url": "https://www.youtube.com/watch?v=mhfGjpjyOrM",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Linking Loader — Two Pass Algorithm",
+              "url": "https://www.youtube.com/watch?v=KKQ4Iqzm1tE",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Static vs Dynamic Linking",
+              "url": "https://www.youtube.com/watch?v=sRCpJSEqV9o",
+              "channel": "Jacob Sorber"
+            },
+            {
+              "title": "Bootstrap Loader",
+              "url": "https://www.youtube.com/watch?v=K2X9GSGO8mM",
+              "channel": "Education 4u"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Macro Preprocessors, Device Drivers, Text Editors, Debuggers",
+          "hours": 9,
+          "topics": [
+            "Macro Instruction Definition and Expansion",
+            "Macro Processor Algorithm and Data Structures",
+            "Nested Macros",
+            "Conditional Macro Expansion",
+            "Macro Processor Design Options",
+            "Device Driver Concepts",
+            "Text Editor Structure",
+            "Debugger Types and Functions"
+          ],
+          "notes": {
+            "detailed": "A macro is a shorthand for a sequence of instructions. Macro definition: MACRO...MEND. On invocation, the macro processor expands the macro by substituting parameters. Data structures: DEFTAB (definition table), NAMTAB (name table), ARGTAB (argument table). Nested macros: macros defined inside other macros (some processors don't allow). Conditional macros use IF/ELSE directives for conditional code generation. A device driver is software providing OS interface to a specific hardware device. A debugger allows step-through execution, breakpoints, and variable inspection.",
+            "short_notes": [
+              "Macro: shorthand for code sequence, expanded at assembly time",
+              "DEFTAB: stores macro definitions",
+              "NAMTAB: maps macro names to DEFTAB entries",
+              "ARGTAB: stores actual arguments during expansion",
+              "Conditional macro: IF/ELSE directives in macro body",
+              "Debugger: breakpoints, single-step, watch variables"
+            ]
+          },
+          "important_topics": [
+            "Macro expansion algorithm",
+            "DEFTAB/NAMTAB/ARGTAB structures",
+            "Macro vs subroutine comparison"
+          ],
+          "expected_questions": [
+            "Explain the macro expansion process with DEFTAB, NAMTAB, ARGTAB.",
+            "Compare macros and subroutines.",
+            "Explain conditional macro expansion with an example.",
+            "What is a device driver? Explain its role."
+          ],
+          "videos": [
+            {
+              "title": "Macro Processor — Definition and Expansion",
+              "url": "https://www.youtube.com/watch?v=l5KbN0g76Zo",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "DEFTAB, NAMTAB, ARGTAB in Macro Processor",
+              "url": "https://www.youtube.com/watch?v=sWN5bYkqNv0",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Macros vs Subroutines",
+              "url": "https://www.youtube.com/watch?v=g_nHOFi7oWU",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Conditional Macro Expansion",
+              "url": "https://www.youtube.com/watch?v=JsQjsHjAHiE",
+              "channel": "Education 4u"
+            },
+            {
+              "title": "Device Drivers and Debuggers Overview",
+              "url": "https://www.youtube.com/watch?v=gBCiBHTI1rk",
+              "channel": "Jacob Sorber"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "Two-pass assembler design",
+            "frequency": 16,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Macro processor data structures",
+            "frequency": 14,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Loader types and linking",
+            "frequency": 13,
+            "last_asked": 2022
+          },
+          {
+            "topic": "One-pass vs two-pass assembler",
+            "frequency": 11,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "Dynamic linking",
+          "Backpatching",
+          "Nested macros"
+        ]
+      }
+    },
+    {
+      "code": "CST302",
+      "name": "Compiler Design",
+      "semester": 6,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Introduction and Lexical Analysis",
+          "hours": 9,
+          "topics": [
+            "Phases of a Compiler",
+            "Lexical Analysis — Tokens, Lexemes, Patterns",
+            "Regular Expressions for Tokens",
+            "Finite Automata for Lexical Analysis",
+            "LEX Tool"
+          ],
+          "notes": {
+            "detailed": "A compiler translates high-level source code to target code. Phases: Lexical Analysis → Syntax Analysis → Semantic Analysis → Intermediate Code Gen → Optimization → Code Generation. Analysis (front end) and Synthesis (back end). Lexical analyzer (scanner) reads source and produces tokens. A token is a (token-class, attribute) pair; a lexeme is the matched string; a pattern is the rule (regex). Example: for 'int x = 5', tokens are (keyword, int), (identifier, x), (op, =), (number, 5).",
+            "short_notes": [
+              "Compiler phases: Lexical→Syntax→Semantic→ICG→Opt→CG",
+              "Lexical analysis: source → token stream",
+              "Token: (class, attribute) — e.g., (id, x)",
+              "Lexeme: actual matched string — e.g., 'velocity'",
+              "Pattern: regex defining token class",
+              "LEX: automatic scanner generator from regex specs"
+            ]
+          },
+          "important_topics": [
+            "Phases of compiler with symbol table and error handler",
+            "Token vs lexeme vs pattern",
+            "DFA for token recognition"
+          ],
+          "expected_questions": [
+            "Explain all phases of a compiler with a running example.",
+            "Specify the analysis and synthesis parts of compilation.",
+            "Define token, lexeme, and pattern with examples.",
+            "Explain how finite automata are used in lexical analysis."
+          ],
+          "videos": [
+            {
+              "title": "Phases of a Compiler — Explained",
+              "url": "https://www.youtube.com/watch?v=_C5AHaS1mRs",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Lexical Analysis — Tokens, Lexemes, Patterns",
+              "url": "https://www.youtube.com/watch?v=Gl6I9oFzFiM",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Regular Expressions for Lexical Analysis",
+              "url": "https://www.youtube.com/watch?v=ASF8hGpBGIk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "LEX Tool — Scanner Generator",
+              "url": "https://www.youtube.com/watch?v=54bo1qaHAfk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "DFA for Token Recognition",
+              "url": "https://www.youtube.com/watch?v=6K6b0zzlPAY",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Syntax Analysis",
+          "hours": 9,
+          "topics": [
+            "Context-Free Grammars for Programming Languages",
+            "Parse Trees and Derivations",
+            "Ambiguity in Grammars",
+            "Left Recursion Elimination",
+            "Left Factoring",
+            "Top-Down Parsing: Recursive Descent, LL(1)",
+            "FIRST and FOLLOW Sets",
+            "Predictive Parsing Table"
+          ],
+          "notes": {
+            "detailed": "A parser checks if the token stream matches the grammar. Top-down parsing builds parse tree from root. Recursive descent: one function per non-terminal. LL(1): Left-to-right scan, Leftmost derivation, 1 lookahead. FIRST(α) = set of terminals that can begin strings derived from α. FOLLOW(A) = set of terminals that can appear after A. Predictive parsing table M[A,a]: M[A,a] = A→α if a∈FIRST(α). Left recursion (A → Aα | β) must be eliminated. Left factoring resolves common prefixes.",
+            "short_notes": [
+              "LL(1): no left recursion, no ambiguity, uses lookahead",
+              "FIRST(α): terminals that can start strings from α; if ε derivable, include ε",
+              "FOLLOW(A): terminals that follow A in any sentential form",
+              "Left recursion: A→Aα|β becomes A→βA', A'→αA'|ε",
+              "Left factoring: A→αβ1|αβ2 becomes A→αA', A'→β1|β2"
+            ]
+          },
+          "important_topics": [
+            "FIRST and FOLLOW set computation",
+            "LL(1) parsing table construction",
+            "Left recursion elimination"
+          ],
+          "expected_questions": [
+            "Compute FIRST and FOLLOW sets for a given grammar.",
+            "Construct the LL(1) predictive parsing table.",
+            "Eliminate left recursion from a given grammar.",
+            "Is the given grammar LL(1)? Justify."
+          ],
+          "videos": [
+            {
+              "title": "FIRST and FOLLOW Sets Computation",
+              "url": "https://www.youtube.com/watch?v=_j7yb7E9hgY",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "LL(1) Parsing Table Construction",
+              "url": "https://www.youtube.com/watch?v=Lm0OPBt9MOI",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Left Recursion Elimination",
+              "url": "https://www.youtube.com/watch?v=3_VCoBfrt9c",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Left Factoring in Grammar",
+              "url": "https://www.youtube.com/watch?v=7FHE2r0CNRE",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Recursive Descent Parser",
+              "url": "https://www.youtube.com/watch?v=SToUyjAsaFk",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Bottom-Up Parsing",
+          "hours": 9,
+          "topics": [
+            "Bottom-Up Parsing Concepts",
+            "Shift-Reduce Parsing",
+            "LR Parsing: SLR, Canonical LR, LALR",
+            "LR(0) Items and Closure",
+            "GOTO Function",
+            "SLR Parsing Table Construction",
+            "YACC Tool"
+          ],
+          "notes": {
+            "detailed": "Bottom-up parsing reduces a string to the start symbol. Shift-reduce: either shift the next token onto the stack or reduce using a production. LR parsers are more powerful than LL. LR(0) items are productions with a dot marking current position. Closure: add items for all productions of non-terminals after the dot. GOTO: transition on symbol. SLR(1) uses FOLLOW sets to decide when to reduce. LALR(1) merges states with same core LR(1) items — most commonly used (used in YACC). Conflicts: shift-reduce and reduce-reduce.",
+            "short_notes": [
+              "Bottom-up: rightmost derivation in reverse",
+              "LR(0) item: [A→α·β] — dot shows parser position",
+              "Closure: expand items when dot is before non-terminal",
+              "SLR: uses FOLLOW; simpler but less powerful",
+              "LALR: merge LR(1) states with same core — balanced power/space",
+              "YACC: automatic LALR(1) parser generator"
+            ]
+          },
+          "important_topics": [
+            "LR(0) items and SLR table construction",
+            "Shift-reduce vs reduce-reduce conflicts",
+            "Comparison of LR parsers"
+          ],
+          "expected_questions": [
+            "Construct the SLR parsing table for a given grammar.",
+            "Compute LR(0) items and GOTO function.",
+            "Explain shift-reduce and reduce-reduce conflicts with examples.",
+            "Compare SLR, LALR, and Canonical LR parsing."
+          ],
+          "videos": [
+            {
+              "title": "Bottom-Up Parsing — Shift Reduce",
+              "url": "https://www.youtube.com/watch?v=VaFvyiBzY2E",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "LR(0) Items and Closure",
+              "url": "https://www.youtube.com/watch?v=OCWH9IaRgfk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "SLR Parsing Table Construction",
+              "url": "https://www.youtube.com/watch?v=nWOhHcyJoJE",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "LALR Parser — Merging States",
+              "url": "https://www.youtube.com/watch?v=5exB2RLUMT4",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "YACC Tool — Parser Generator",
+              "url": "https://www.youtube.com/watch?v=__-wUHG2rfM",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Semantic Analysis and Intermediate Code Generation",
+          "hours": 9,
+          "topics": [
+            "Syntax-Directed Definitions",
+            "Synthesized and Inherited Attributes",
+            "S-Attributed and L-Attributed Grammars",
+            "Type Checking",
+            "Intermediate Code: Three-Address Code",
+            "Quadruples, Triples, Indirect Triples",
+            "Translation of Expressions, Control Structures"
+          ],
+          "notes": {
+            "detailed": "Semantic analysis checks type compatibility and meaning correctness. Syntax-directed translation attaches attributes to grammar symbols. Synthesized attributes pass information up the parse tree; inherited attributes pass information down. S-attributed: only synthesized attributes (bottom-up evaluation). L-attributed: suitable for top-down (inherited from parent/left sibling). Three-address code: at most one operator per instruction (x = y op z). Quadruples: (op, arg1, arg2, result). Triples: (op, arg1, arg2) — result implicit from position.",
+            "short_notes": [
+              "Synthesized attribute: computed from children",
+              "Inherited attribute: computed from parent/left siblings",
+              "Three-address code: x = y op z (max 1 operator)",
+              "Quadruple: (op, arg1, arg2, result) — 4-field entry",
+              "Triple: (op, arg1, arg2) — no explicit result field",
+              "L-attributed: can be evaluated in single left-to-right pass"
+            ]
+          },
+          "important_topics": [
+            "Three-address code generation for expressions",
+            "Quadruple vs triple representation",
+            "Type checking rules"
+          ],
+          "expected_questions": [
+            "Translate a given expression to three-address code and represent as quadruples.",
+            "Differentiate synthesized and inherited attributes with examples.",
+            "Explain S-attributed and L-attributed grammars.",
+            "Generate three-address code for a given if-else statement."
+          ],
+          "videos": [
+            {
+              "title": "Syntax Directed Translation",
+              "url": "https://www.youtube.com/watch?v=VTsTiMGsaL4",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Synthesized and Inherited Attributes",
+              "url": "https://www.youtube.com/watch?v=k1llYIoJHgM",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Three-Address Code Generation",
+              "url": "https://www.youtube.com/watch?v=2sLl_HkVxRc",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Quadruples and Triples in Compiler",
+              "url": "https://www.youtube.com/watch?v=lkJ7nL2y3Lw",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Type Checking in Semantic Analysis",
+              "url": "https://www.youtube.com/watch?v=vbFCgmADQzk",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Code Optimization and Code Generation",
+          "hours": 9,
+          "topics": [
+            "Issues in Code Generation",
+            "Target Machine Model",
+            "Basic Blocks and Flow Graphs",
+            "Optimization: Peephole Optimization",
+            "Loop Optimization: Code Motion, Strength Reduction",
+            "Register Allocation",
+            "Code Generation Algorithm"
+          ],
+          "notes": {
+            "detailed": "Code optimization improves generated code for speed or size without changing semantics. Machine-independent optimizations: common subexpression elimination, dead code elimination, constant folding. Loop optimization: code motion (move loop-invariant code outside), strength reduction (replace expensive ops with cheaper ones: x*2 → x<<1). Peephole optimization: local transformations on a small window of instructions — remove redundant loads/stores, simplify jumps. Register allocation: assign variables to registers; graph coloring approach. A basic block is a maximal sequence with one entry and one exit.",
+            "short_notes": [
+              "Basic block: single entry, single exit, no branches inside",
+              "Common subexpression elimination: avoid recomputing same expression",
+              "Dead code elimination: remove unreachable/useless code",
+              "Loop invariant code motion: move constant computations outside loop",
+              "Strength reduction: x*2 → x<<1, x*x inside loop → increment",
+              "Peephole: local window optimization — remove redundant moves"
+            ]
+          },
+          "important_topics": [
+            "Peephole optimization examples",
+            "Loop optimization techniques",
+            "Basic block identification"
+          ],
+          "expected_questions": [
+            "What is the role of peephole optimization? Give examples.",
+            "Explain loop optimization techniques: code motion and strength reduction.",
+            "Identify basic blocks and draw the flow graph for a given code.",
+            "What are the issues in the design of a code generator?"
+          ],
+          "videos": [
+            {
+              "title": "Code Optimization Techniques",
+              "url": "https://www.youtube.com/watch?v=6Q3mPRuNiKk",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Peephole Optimization",
+              "url": "https://www.youtube.com/watch?v=j7LsAR4Dw7g",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Loop Optimization — Code Motion and Strength Reduction",
+              "url": "https://www.youtube.com/watch?v=6NfVnSmJaXo",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Basic Blocks and Flow Graphs",
+              "url": "https://www.youtube.com/watch?v=X4HHN2g4zz0",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Register Allocation by Graph Coloring",
+              "url": "https://www.youtube.com/watch?v=G7R6BZpvSsw",
+              "channel": "Neso Academy"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "FIRST/FOLLOW sets + LL(1) table",
+            "frequency": 18,
+            "last_asked": 2023
+          },
+          {
+            "topic": "SLR parsing table construction",
+            "frequency": 16,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Three-address code / quadruples",
+            "frequency": 14,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Left recursion elimination",
+            "frequency": 12,
+            "last_asked": 2022
+          },
+          {
+            "topic": "Peephole and loop optimization",
+            "frequency": 11,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "LALR vs SLR comparison",
+          "Inherited attributes and SDT",
+          "Register allocation by graph coloring"
+        ]
+      }
+    },
+    {
+      "code": "CST306",
+      "name": "Algorithm Analysis and Design",
+      "semester": 6,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 45,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Introduction to Algorithm Analysis",
+          "hours": 9,
+          "topics": [
+            "Characteristics of Algorithms",
+            "Time and Space Complexity",
+            "Asymptotic Notations",
+            "Best, Average, Worst Case Analysis",
+            "Recurrence Equations",
+            "Master Theorem",
+            "Analysis of Recursive Algorithms"
+          ],
+          "notes": {
+            "detailed": "An algorithm's efficiency is measured by time (steps) and space (memory) as functions of input size n. Asymptotic notation: Big-O (upper), Omega (lower), Theta (tight). Master Theorem solves T(n) = aT(n/b) + f(n): Case 1: f(n) = O(n^(log_b a - ε)) → T = Θ(n^(log_b a)); Case 2: f(n) = Θ(n^(log_b a)) → T = Θ(n^(log_b a) log n); Case 3: f(n) = Ω(n^(log_b a + ε)) → T = Θ(f(n)).",
+            "short_notes": [
+              "T(n) for merge sort: T(n) = 2T(n/2) + n → O(n log n)",
+              "Master Theorem: 3 cases based on f(n) vs n^(log_b a)",
+              "Recurrence: substitute (iteration) or tree method",
+              "Amortized analysis: average cost over a sequence of operations"
+            ]
+          },
+          "important_topics": [
+            "Master Theorem application",
+            "Recurrence relation solving",
+            "Time complexity of common algorithms"
+          ],
+          "expected_questions": [
+            "Solve T(n) = 2T(n/2) + n using the Master Theorem.",
+            "Calculate the time complexity of a given code segment.",
+            "Explain best, average, and worst-case complexity with examples."
+          ],
+          "videos": [
+            {
+              "title": "Algorithm Analysis — Time and Space Complexity",
+              "url": "https://www.youtube.com/watch?v=9TlHvipP5yA",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Recurrence Relations and Master Theorem",
+              "url": "https://www.youtube.com/watch?v=OynWkEj0S-s",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Master Theorem Examples",
+              "url": "https://www.youtube.com/watch?v=6CX7s7JnXs0",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Red-Black Trees",
+              "url": "https://www.youtube.com/watch?v=qvZGUFHWChY",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "AVL Trees — Rotations and Balancing",
+              "url": "https://www.youtube.com/watch?v=jDM6_TnYIqE",
+              "channel": "Abdul Bari"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Advanced Data Structures and Graph Algorithms",
+          "hours": 10,
+          "topics": [
+            "Red-Black Trees",
+            "B-Trees",
+            "Binomial Heaps",
+            "Fibonacci Heaps",
+            "BFS Analysis",
+            "DFS Analysis",
+            "Topological Sorting",
+            "Strongly Connected Components"
+          ],
+          "notes": {
+            "detailed": "Red-Black Trees are balanced BSTs with 5 properties ensuring O(log n) height. B-Trees are balanced multi-way trees used in databases/file systems for disk-based storage. Topological sort orders vertices of a DAG so all edges go from left to right — uses DFS (output nodes in reverse finish order) or Kahn's algorithm (BFS-based, remove sources). Strongly Connected Components (Kosaraju's algorithm): DFS, transpose graph, DFS on transpose in reverse finish order.",
+            "short_notes": [
+              "Red-Black Tree: balanced BST, O(log n) all ops",
+              "B-Tree: multi-way balanced tree for disk storage",
+              "Topological sort: only for DAGs, multiple valid orderings",
+              "DFS on DAG: post-order reversed = topological order",
+              "SCC: Kosaraju's — 2 DFS passes on graph + transpose"
+            ]
+          },
+          "important_topics": [
+            "Topological sort algorithm and trace",
+            "Red-Black tree properties",
+            "SCC algorithm"
+          ],
+          "expected_questions": [
+            "Find the topological ordering of a given DAG.",
+            "Explain the properties of a Red-Black Tree.",
+            "Find strongly connected components of a given graph using Kosaraju's algorithm.",
+            "Perform BFS and DFS on a given graph and analyse time complexity."
+          ],
+          "videos": [
+            {
+              "title": "Graph Algorithms — Topological Sort",
+              "url": "https://www.youtube.com/watch?v=eL10SaQTfTE",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Strongly Connected Components — Kosaraju's",
+              "url": "https://www.youtube.com/watch?v=RpgcYiky7uw",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "BFS and DFS Analysis",
+              "url": "https://www.youtube.com/watch?v=pcKY4hjDrxk",
+              "channel": "mycodeschool"
+            },
+            {
+              "title": "Red-Black Tree Insert and Delete",
+              "url": "https://www.youtube.com/watch?v=CTvfzU_uNKE",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Graph Representation and Complexity",
+              "url": "https://www.youtube.com/watch?v=gXgEDyodOJU",
+              "channel": "mycodeschool"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Divide and Conquer and Greedy Method",
+          "hours": 8,
+          "topics": [
+            "Divide & Conquer Control Abstraction",
+            "Merge Sort Analysis",
+            "Quick Sort Analysis",
+            "Strassen's Matrix Multiplication",
+            "Greedy Strategy",
+            "Fractional Knapsack Problem",
+            "Huffman Coding",
+            "Minimum Spanning Tree: Kruskal's, Prim's",
+            "Dijkstra's Shortest Path"
+          ],
+          "notes": {
+            "detailed": "Divide and Conquer: divide problem, conquer subproblems recursively, combine results. Merge Sort: T(n) = 2T(n/2) + n = O(n log n). Strassen's: matrix multiplication in O(n^2.807) vs standard O(n^3). Greedy: makes locally optimal choice at each step. Fractional Knapsack: sort by value/weight ratio, fill greedily — O(n log n). Huffman Coding: optimal prefix codes using a min-heap — builds a tree where frequent symbols have shorter codes. Kruskal's MST: sort edges by weight, add if no cycle (uses Union-Find) — O(E log E). Prim's: grow tree from a vertex — O(V² or E log V with heap). Dijkstra's: greedy shortest path — O((V+E) log V).",
+            "short_notes": [
+              "Merge Sort: O(n log n), stable, O(n) space",
+              "Quick Sort: O(n log n) avg, O(n²) worst, in-place",
+              "Strassen: O(n^2.807) matrix multiply",
+              "Fractional Knapsack: greedy by ratio — O(n log n)",
+              "Huffman: optimal prefix code, min-heap based",
+              "Kruskal: MST by edge sorting + union-find",
+              "Prim: MST by growing from source",
+              "Dijkstra: SSSP, no negative edges, O((V+E) log V)"
+            ]
+          },
+          "important_topics": [
+            "Kruskal and Prim MST trace",
+            "Dijkstra trace",
+            "Huffman tree construction",
+            "Fractional Knapsack"
+          ],
+          "expected_questions": [
+            "State the Fractional Knapsack problem and write the greedy algorithm.",
+            "Construct a Huffman tree for given symbol frequencies.",
+            "Apply Kruskal's/Prim's algorithm to find the MST of a given graph.",
+            "Apply Dijkstra's algorithm for single source shortest path.",
+            "Trace Strassen's algorithm for 2×2 matrices."
+          ],
+          "videos": [
+            {
+              "title": "Divide and Conquer — Merge Sort and Quick Sort",
+              "url": "https://www.youtube.com/watch?v=EzeYI7p9MjU",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Strassen's Matrix Multiplication",
+              "url": "https://www.youtube.com/watch?v=0oJyNmEbS4w",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Greedy Algorithms — Fractional Knapsack",
+              "url": "https://www.youtube.com/watch?v=oTTzNMHM05I",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Huffman Coding Algorithm",
+              "url": "https://www.youtube.com/watch?v=co4_ahEDCho",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Kruskal's and Prim's MST Algorithms",
+              "url": "https://www.youtube.com/watch?v=4ZlRH0eK-qQ",
+              "channel": "Abdul Bari"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Dynamic Programming and Backtracking",
+          "hours": 8,
+          "topics": [
+            "Dynamic Programming Control Abstraction",
+            "Principle of Optimality",
+            "0/1 Knapsack Problem",
+            "Floyd-Warshall Algorithm",
+            "Matrix Chain Multiplication",
+            "Longest Common Subsequence",
+            "Backtracking: N-Queens Problem",
+            "Graph Coloring",
+            "Hamiltonian Cycle",
+            "Branch and Bound"
+          ],
+          "notes": {
+            "detailed": "Dynamic Programming solves problems by combining solutions to overlapping subproblems (memoization or tabulation). Principle of Optimality: optimal solution contains optimal sub-solutions. 0/1 Knapsack: DP table dp[i][w] = max value using items 1..i with weight ≤ w — O(nW). Floyd-Warshall: all-pairs shortest paths — O(V³), handles negative edges (no negative cycles). Matrix Chain Multiplication: find optimal parenthesization — O(n³). LCS: length of longest common subsequence — O(mn). Backtracking: systematically explores solution space; prunes dead ends. N-Queens: place N queens on N×N board such that no two attack each other.",
+            "short_notes": [
+              "DP: overlapping subproblems + optimal substructure",
+              "0/1 Knapsack: dp[i][w] = max(dp[i-1][w], val[i]+dp[i-1][w-wt[i]])",
+              "Floyd-Warshall: dp[k][i][j] = min(dp[k-1][i][j], dp[k-1][i][k]+dp[k-1][k][j])",
+              "LCS: dp[i][j] = dp[i-1][j-1]+1 if match, else max(dp[i-1][j], dp[i][j-1])",
+              "Backtracking: build solution incrementally, prune when constraint violated",
+              "N-Queens: O(n!) backtracking, check row/col/diagonal conflicts"
+            ]
+          },
+          "important_topics": [
+            "0/1 Knapsack DP table",
+            "Floyd-Warshall trace",
+            "N-Queens solution trace",
+            "LCS trace"
+          ],
+          "expected_questions": [
+            "Trace the DP algorithm for 0/1 Knapsack with given items and capacity.",
+            "Apply Floyd-Warshall algorithm to find all-pairs shortest paths.",
+            "List the steps of DP approach. Solve Matrix Chain Multiplication for given dimensions.",
+            "Trace the N-Queens problem using backtracking for n=4.",
+            "Find the LCS of two given strings using DP."
+          ],
+          "videos": [
+            {
+              "title": "Dynamic Programming — Introduction",
+              "url": "https://www.youtube.com/watch?v=5dRGRueKU3M",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "0/1 Knapsack Problem — DP",
+              "url": "https://www.youtube.com/watch?v=8LusJS5-AGo",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Floyd-Warshall All Pairs Shortest Path",
+              "url": "https://www.youtube.com/watch?v=oNI0rf2P9gE",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Longest Common Subsequence — LCS",
+              "url": "https://www.youtube.com/watch?v=sSno9rV8Rhg",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "N-Queens Backtracking Problem",
+              "url": "https://www.youtube.com/watch?v=xFv_Hl4B83A",
+              "channel": "Abdul Bari"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Introduction to Complexity Theory",
+          "hours": 10,
+          "topics": [
+            "Tractable and Intractable Problems",
+            "Complexity Classes P and NP",
+            "NP-Hard and NP-Complete Problems",
+            "Cook's Theorem",
+            "NP-Completeness Proof: Clique, Vertex Cover",
+            "Approximation Algorithms: Bin Packing, Graph Coloring",
+            "Randomized Algorithms: Monte Carlo, Las Vegas",
+            "Randomized Quick Sort"
+          ],
+          "notes": {
+            "detailed": "P: problems solvable in polynomial time. NP: problems verifiable in polynomial time. P ⊆ NP. NP-Hard: at least as hard as hardest NP problems. NP-Complete: NP-Hard ∩ NP. Cook's Theorem: SAT is NP-Complete (first NP-complete problem). Reductions: to prove X is NP-complete, reduce a known NP-complete problem to X in polynomial time. Clique: find a complete subgraph of size k — NP-complete. Approximation algorithms give solutions within a provable factor of optimal. Randomized algorithms use random choices: Monte Carlo (always fast, may be wrong), Las Vegas (always correct, expected fast).",
+            "short_notes": [
+              "P: deterministic polynomial time",
+              "NP: non-deterministic polynomial time (or: verifiable in poly time)",
+              "NP-Complete: NP ∩ NP-Hard",
+              "Cook's Theorem: SAT is first NP-complete problem",
+              "Reduction: prove NP-hardness by reducing known NPC to new problem",
+              "Monte Carlo: may give wrong answer with low probability",
+              "Las Vegas: always correct, random running time"
+            ]
+          },
+          "important_topics": [
+            "P vs NP explanation",
+            "NP-completeness proof technique",
+            "Approximation ratio concept"
+          ],
+          "expected_questions": [
+            "Differentiate between P and NP problems.",
+            "Define NP-Hard and NP-Complete. How do you prove a problem is NP-Complete?",
+            "Prove that the Clique problem is NP-Complete.",
+            "Explain Monte Carlo and Las Vegas randomized algorithms with examples.",
+            "What is an approximation algorithm? Explain with an example."
+          ],
+          "videos": [
+            {
+              "title": "P vs NP — Explained Simply",
+              "url": "https://www.youtube.com/watch?v=YX40hbAHx3s",
+              "channel": "Computerphile"
+            },
+            {
+              "title": "NP-Complete Problems and Reductions",
+              "url": "https://www.youtube.com/watch?v=e2cF8a5aAhE",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Cook's Theorem — SAT is NP-Complete",
+              "url": "https://www.youtube.com/watch?v=W9G_1xG77LE",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Approximation Algorithms",
+              "url": "https://www.youtube.com/watch?v=MEz1J9wY2iM",
+              "channel": "Abdul Bari"
+            },
+            {
+              "title": "Randomized Algorithms — Monte Carlo and Las Vegas",
+              "url": "https://www.youtube.com/watch?v=dn_tLhXGhJc",
+              "channel": "Abdul Bari"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "DP problems (Knapsack/Floyd-Warshall/LCS)",
+            "frequency": 20,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Greedy algorithms (Huffman/Dijkstra/Kruskal)",
+            "frequency": 18,
+            "last_asked": 2023
+          },
+          {
+            "topic": "P, NP, NP-Complete definitions and proof",
+            "frequency": 16,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Master Theorem + recurrence solving",
+            "frequency": 14,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Backtracking (N-Queens)",
+            "frequency": 12,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "Approximation algorithms",
+          "Randomized Quick Sort analysis",
+          "Matrix Chain Multiplication"
+        ]
+      }
+    },
+    {
+      "code": "CST401",
+      "name": "Artificial Intelligence",
+      "semester": 7,
+      "credits": 4,
+      "category": "PCC",
+      "hours": 36,
+      "modules": [
+        {
+          "module_no": 1,
+          "title": "Introduction to AI and Intelligent Agents",
+          "hours": 7,
+          "topics": [
+            "What is AI? — Definitions and Approaches",
+            "Foundations of AI",
+            "Intelligent Agents — Agents and Environments",
+            "Rationality",
+            "PEAS Description",
+            "Structure of Agents",
+            "Agent Types: Simple Reflex, Model-Based, Goal-Based, Utility-Based, Learning"
+          ],
+          "notes": {
+            "detailed": "AI is the science of making machines that think and act rationally. Four approaches: thinking humanly, acting humanly (Turing Test), thinking rationally, acting rationally. An agent is anything that perceives its environment via sensors and acts via actuators. PEAS: Performance measure, Environment, Actuators, Sensors. Rational agent: maximizes expected performance. Environment types: fully/partially observable, deterministic/stochastic, episodic/sequential, static/dynamic, discrete/continuous. Simple reflex agents use condition-action rules. Model-based agents maintain internal state. Goal-based agents reason about future. Utility-based agents maximize a utility function. Learning agents improve from experience.",
+            "short_notes": [
+              "Turing Test: machine indistinguishable from human in text chat",
+              "Rational agent: best action for maximum expected performance",
+              "PEAS: Performance, Environment, Actuators, Sensors",
+              "Simple reflex: IF condition THEN action — no memory",
+              "Model-based: maintains internal model of world",
+              "Utility-based: maximizes utility function, handles trade-offs",
+              "Learning agent: critic + learning element + performance element + problem generator"
+            ]
+          },
+          "important_topics": [
+            "PEAS description for given scenarios",
+            "Comparison of agent types",
+            "Rationality definition"
+          ],
+          "expected_questions": [
+            "Give the PEAS description for a given agent (e.g., automated taxi, medical diagnosis system).",
+            "Compare the five types of intelligent agents.",
+            "What is a rational agent? How does rationality differ from omniscience?",
+            "Explain the structure of a learning agent."
+          ],
+          "videos": [
+            {
+              "title": "Introduction to Artificial Intelligence",
+              "url": "https://www.youtube.com/watch?v=JMUxmLyrhSk",
+              "channel": "Simplilearn"
+            },
+            {
+              "title": "Intelligent Agents and PEAS Description",
+              "url": "https://www.youtube.com/watch?v=3MkFCkf5bY8",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Types of AI Agents",
+              "url": "https://www.youtube.com/watch?v=bIjuCHGhqLw",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Rational Agents and Rationality",
+              "url": "https://www.youtube.com/watch?v=q0B1HdNFuEU",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Environment Types in AI",
+              "url": "https://www.youtube.com/watch?v=aaNv9bfgKh4",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 2,
+          "title": "Problem Solving by Searching",
+          "hours": 7,
+          "topics": [
+            "Problem Formulation: State, Actions, Goal, Path Cost",
+            "Uninformed Search: BFS, DFS, Uniform Cost Search, Depth-Limited, Iterative Deepening",
+            "Informed Search: Greedy Best-First Search, A* Search",
+            "Heuristic Functions — Admissibility, Consistency",
+            "Local Search: Hill Climbing, Simulated Annealing, Genetic Algorithms"
+          ],
+          "notes": {
+            "detailed": "A search problem: initial state, actions, transition model, goal test, path cost. Uninformed (blind) search has no domain knowledge. BFS: complete, optimal (unit cost), O(b^d) time/space. DFS: not complete (infinite spaces), not optimal, O(bm) space. Uniform Cost Search: expands lowest path cost — optimal, complete. Iterative Deepening DFS (IDDFS): combines DFS space efficiency with BFS completeness. Informed search uses heuristics. A* with admissible heuristic is optimal and complete. Admissible: h(n) ≤ true cost. Consistent (monotone): h(n) ≤ c(n,a,n') + h(n'). Hill Climbing: greedy local search, may get stuck at local maxima. Simulated Annealing: accepts worse solutions with decreasing probability.",
+            "short_notes": [
+              "BFS: complete, optimal (unit cost), O(b^d) memory",
+              "DFS: O(bm) memory, not complete/optimal in general",
+              "A*: optimal if h is admissible, complete",
+              "Admissible heuristic: never overestimates true cost",
+              "Consistent heuristic: h(n) ≤ step cost + h(n')",
+              "Hill climbing: fast, no memory, stuck at local maxima",
+              "Simulated annealing: probabilistically accepts bad moves to escape local optima"
+            ]
+          },
+          "important_topics": [
+            "A* search trace",
+            "BFS vs DFS vs IDDFS comparison",
+            "Admissibility and consistency of heuristics"
+          ],
+          "expected_questions": [
+            "Explain Best First Search and A* Search with examples.",
+            "Compare BFS, DFS, UCS, and A* on completeness, optimality, time, and space.",
+            "What are admissible and consistent heuristics? Give examples.",
+            "Explain hill climbing. What are its limitations?"
+          ],
+          "videos": [
+            {
+              "title": "Uninformed Search — BFS, DFS, UCS",
+              "url": "https://www.youtube.com/watch?v=1wu2sojwsyQ",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "A* Search Algorithm",
+              "url": "https://www.youtube.com/watch?v=ySN5Wnu88nE",
+              "channel": "Computerphile"
+            },
+            {
+              "title": "Heuristic Functions — Admissibility and Consistency",
+              "url": "https://www.youtube.com/watch?v=D0rTyT-aMlY",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Hill Climbing and Simulated Annealing",
+              "url": "https://www.youtube.com/watch?v=oSdPmxFCBBM",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Iterative Deepening DFS",
+              "url": "https://www.youtube.com/watch?v=7QcoJjSVT38",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 3,
+          "title": "Problem Solving in Complex Environments",
+          "hours": 7,
+          "topics": [
+            "Local Search in Continuous Spaces",
+            "Searching with Non-Deterministic Actions",
+            "Searching with Partial Observations",
+            "Online Search",
+            "Game Playing: Minimax Algorithm",
+            "Alpha-Beta Pruning",
+            "Constraint Satisfaction Problems (CSP)",
+            "Backtracking for CSP"
+          ],
+          "notes": {
+            "detailed": "Minimax algorithm: maximizer (MAX) maximizes score, minimizer (MIN) minimizes score. Search tree explored to terminal states. Optimal play assuming adversary plays optimally. Time: O(b^m), Space: O(bm). Alpha-Beta pruning eliminates branches that cannot affect the final decision, reducing search to O(b^(m/2)) in the best case. CSP: defined by variables, domains, and constraints. Backtracking search for CSP: assign values, check constraints, backtrack if violated. Heuristics: MRV (Minimum Remaining Values), degree heuristic, LCV (Least Constraining Value).",
+            "short_notes": [
+              "Minimax: MAX picks max, MIN picks min, recursive",
+              "Alpha-β pruning: prune nodes that can't affect decision",
+              "Alpha: best option for MAX so far; Beta: best for MIN",
+              "CSP: variables + domains + constraints",
+              "MRV: choose variable with fewest legal values first",
+              "LCV: assign value that rules out fewest choices for neighbors"
+            ]
+          },
+          "important_topics": [
+            "Minimax trace on game tree",
+            "Alpha-beta pruning trace",
+            "CSP formulation"
+          ],
+          "expected_questions": [
+            "Trace the Minimax algorithm on a given game tree.",
+            "Explain alpha-beta pruning and trace it on an example.",
+            "Formulate a given problem as a CSP.",
+            "Explain backtracking search for CSP with MRV and LCV heuristics."
+          ],
+          "videos": [
+            {
+              "title": "Minimax Algorithm in Game Playing",
+              "url": "https://www.youtube.com/watch?v=l-hh51ncgDI",
+              "channel": "Sebastian Lague"
+            },
+            {
+              "title": "Alpha-Beta Pruning",
+              "url": "https://www.youtube.com/watch?v=xBXHtz4Gbdo",
+              "channel": "Sebastian Lague"
+            },
+            {
+              "title": "Constraint Satisfaction Problems",
+              "url": "https://www.youtube.com/watch?v=hJ9WOiueJes",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Backtracking for CSP with MRV and LCV",
+              "url": "https://www.youtube.com/watch?v=5sRxKRHr0dA",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Local Search — Hill Climbing and Variants",
+              "url": "https://www.youtube.com/watch?v=oSdPmxFCBBM",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 4,
+          "title": "Knowledge Representation and Reasoning",
+          "hours": 9,
+          "topics": [
+            "Knowledge-Based Agents",
+            "Propositional Logic — Syntax, Semantics",
+            "Propositional Inference: Resolution",
+            "First Order Predicate Logic (FOPL) — Syntax and Semantics",
+            "Using First-Order Logic",
+            "Knowledge Representation in FOPL",
+            "Inference in FOPL — Unification, Resolution",
+            "Forward and Backward Chaining"
+          ],
+          "notes": {
+            "detailed": "A knowledge-based agent uses a knowledge base (KB) of sentences in a formal language. Propositional logic: variables, connectives (¬, ∧, ∨, →, ↔). Modus Ponens: from P and P→Q, infer Q. Resolution: the only inference rule needed for complete propositional reasoning. FOPL adds objects, predicates, functions, quantifiers (∀, ∃). Unification: finding substitutions to make expressions identical. Forward chaining (data-driven): start from known facts, apply rules, derive new facts. Backward chaining (goal-driven): start from goal, work backward to find supporting facts.",
+            "short_notes": [
+              "Propositional logic: sentences about world using ∧,∨,¬,→,↔",
+              "FOPL: predicates, functions, quantifiers — richer representation",
+              "Modus Ponens: P, P→Q ⊢ Q",
+              "Resolution: negate goal, derive contradiction (proof by refutation)",
+              "Unification: θ such that SUBST(θ, α) = SUBST(θ, β)",
+              "Forward chaining: facts → rules → new facts (data-driven)",
+              "Backward chaining: goal → supporting conditions (goal-driven)"
+            ]
+          },
+          "important_topics": [
+            "FOPL sentences for given knowledge",
+            "Resolution refutation proof",
+            "Unification examples"
+          ],
+          "expected_questions": [
+            "Represent given knowledge in First Order Predicate Logic.",
+            "Explain resolution as an inference rule. Prove a given statement using resolution.",
+            "Compare forward and backward chaining with examples.",
+            "Explain unification with an example."
+          ],
+          "videos": [
+            {
+              "title": "Propositional Logic in AI",
+              "url": "https://www.youtube.com/watch?v=itrXYg41-V0",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "First Order Predicate Logic (FOPL)",
+              "url": "https://www.youtube.com/watch?v=C7EH4y7vSm8",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Resolution in Propositional Logic",
+              "url": "https://www.youtube.com/watch?v=pu0kGMHiWBQ",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Forward and Backward Chaining",
+              "url": "https://www.youtube.com/watch?v=0E4qpzRiCsA",
+              "channel": "Neso Academy"
+            },
+            {
+              "title": "Unification in First Order Logic",
+              "url": "https://www.youtube.com/watch?v=6UgVPiGLaDU",
+              "channel": "Neso Academy"
+            }
+          ]
+        },
+        {
+          "module_no": 5,
+          "title": "Machine Learning",
+          "hours": 6,
+          "topics": [
+            "Forms of Learning",
+            "Supervised Learning — Decision Trees",
+            "Inductive Learning",
+            "Ensemble Methods",
+            "Unsupervised Learning",
+            "Reinforcement Learning Overview"
+          ],
+          "notes": {
+            "detailed": "Learning from examples: inductive learning infers a general rule from specific examples. Decision tree learning: ID3/C4.5 uses Information Gain (entropy reduction) to select the best attribute at each node. Entropy H(S) = -Σ p_i log2(p_i). Information Gain IG(S, A) = H(S) - Σ|Sv|/|S| H(Sv). Overfitting: model too specific to training data — solved by pruning. Ensemble methods (bagging, boosting) combine multiple models. Reinforcement learning: agent learns by receiving rewards/penalties for actions in an environment.",
+            "short_notes": [
+              "Supervised: labeled examples, learn input→output mapping",
+              "Decision tree: split on attribute with highest information gain",
+              "Entropy: H(S) = -Σ p_i log2(p_i) — measure of impurity",
+              "Information Gain: H(S) - weighted avg H of subsets",
+              "Overfitting: low training error, high test error — prune or regularize",
+              "Reinforcement learning: reward signal guides policy learning"
+            ]
+          },
+          "important_topics": [
+            "Decision tree construction with ID3",
+            "Entropy and information gain calculation",
+            "Comparison of learning paradigms"
+          ],
+          "expected_questions": [
+            "Construct a decision tree for a given training dataset using ID3.",
+            "Calculate entropy and information gain for given data.",
+            "Explain supervised, unsupervised, and reinforcement learning with examples.",
+            "What is overfitting? How can it be addressed?"
+          ],
+          "videos": [
+            {
+              "title": "Decision Trees — ID3 Algorithm",
+              "url": "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+              "channel": "StatQuest"
+            },
+            {
+              "title": "Entropy and Information Gain",
+              "url": "https://www.youtube.com/watch?v=YtebGVx-Fxw",
+              "channel": "StatQuest"
+            },
+            {
+              "title": "Supervised vs Unsupervised vs Reinforcement Learning",
+              "url": "https://www.youtube.com/watch?v=1FZ0A1QCMWc",
+              "channel": "freeCodeCamp"
+            },
+            {
+              "title": "Overfitting and Regularization",
+              "url": "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+              "channel": "StatQuest"
+            },
+            {
+              "title": "Ensemble Methods — Bagging and Boosting",
+              "url": "https://www.youtube.com/watch?v=2Mg8QD0F1dQ",
+              "channel": "StatQuest"
+            }
+          ]
+        }
+      ],
+      "trend_analysis": {
+        "most_asked_topics": [
+          {
+            "topic": "A* search and heuristics",
+            "frequency": 16,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Minimax and Alpha-Beta pruning",
+            "frequency": 15,
+            "last_asked": 2023
+          },
+          {
+            "topic": "FOL representation and resolution",
+            "frequency": 14,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Decision trees with ID3",
+            "frequency": 13,
+            "last_asked": 2023
+          },
+          {
+            "topic": "Agent types and PEAS",
+            "frequency": 10,
+            "last_asked": 2022
+          }
+        ],
+        "predicted_hot_topics": [
+          "CSP formulation",
+          "Backtracking with MRV/LCV",
+          "Reinforcement learning basics"
+        ]
+      }
+    }
+  ]
+}
